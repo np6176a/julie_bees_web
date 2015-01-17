@@ -67,7 +67,7 @@ h2 {
 .effect:hover .mask {
  opacity: 1;
  border:175px solid rgba(0,0,0,0.7);
- margin-top: -20px;
+ margin-top: -30px;
 }
 
 .effect:hover a.info {
