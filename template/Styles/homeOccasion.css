@@ -7,30 +7,6 @@ h2 {
 .Category {
     text-align: center!important;
 }
-/*.Category > li {*/
-   /*-moz-box-sizing: border-box;*/
-    /*background: none repeat scroll 0 0 #FFFFFF;*/
-    /*display: inline-block;*/
-    /*font-size: 15px;*/
-    /*height: auto !important;*/
-    /*list-style: none outside none;*/
-    /*overflow: hidden;*/
-    /*padding: 0;*/
-    /*vertical-align: top;*/
-    /*border: 10px solid #FBFBFB;*/
-    /*width: 330px;*/
-    /*max-height: 330px;*/
-    /*float: none;*/
-    /*margin: 0 20px;*/
-/*}*/
-/*.Category > li:hover{*/
-    /*border-color: #f3f3f3;*/
-/*}*/
-
-/*.subCategory > img {*/
-	/*max-width: 100%;*/
-/*}*/
-
 .subCategory {
  -moz-box-sizing: border-box;
  display: inline-block;
@@ -91,6 +67,7 @@ h2 {
 .effect:hover .mask {
  opacity: 1;
  border:165px solid rgba(0,0,0,0.7);
+ margin-top: -20px;
 }
 
 .effect:hover a.info {
