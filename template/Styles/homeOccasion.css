@@ -1,3 +1,4 @@
+/*general layout*/
 h2 {
 	font-size: 36px !important;
 	font-weight: 600;
@@ -6,28 +7,88 @@ h2 {
 .Category {
     text-align: center!important;
 }
-.Category > li {
-   -moz-box-sizing: border-box;
-    background: none repeat scroll 0 0 #FFFFFF;
-    display: inline-block;
-    font-size: 15px;
-    height: auto !important;
-    list-style: none outside none;
-    overflow: hidden;
-    padding: 0;
-    vertical-align: top;
-    border: 10px solid #FBFBFB;
-    width: 330px;
-    max-height: 330px;
-    float: none;
-    margin: 0 20px;
-}
-.Category > li:hover{
-    border-color: #f3f3f3;
+/*.Category > li {*/
+   /*-moz-box-sizing: border-box;*/
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    /*display: inline-block;*/
+    /*font-size: 15px;*/
+    /*height: auto !important;*/
+    /*list-style: none outside none;*/
+    /*overflow: hidden;*/
+    /*padding: 0;*/
+    /*vertical-align: top;*/
+    /*border: 10px solid #FBFBFB;*/
+    /*width: 330px;*/
+    /*max-height: 330px;*/
+    /*float: none;*/
+    /*margin: 0 20px;*/
+/*}*/
+/*.Category > li:hover{*/
+    /*border-color: #f3f3f3;*/
+/*}*/
+
+/*.subCategory > img {*/
+	/*max-width: 100%;*/
+/*}*/
+
+.subCategory {
+ width: 300px;
+ height: 200px;
+ margin: 10px;
+ float: left;
+ border: 5px solid #fff;
+ overflow: hidden;
+ position: relative;
+ text-align: center;
+ box-shadow: 0px 0px 5px #aaa;
+ cursor: default;
 }
 
-.subCategory a > img {
-	max-width: 100%;
+.subCategory .mask, .subCategory .content {
+ width: 300px;
+ height: 200px;
+ position: absolute;
+ overflow: hidden;
+ top: 0;
+ left: 0;
 }
 
+.subCategory img {
+ display: block;
+ position: relative;
+}
+
+.subCategory a.info {
+ display: inline-block;
+ text-decoration: none;
+ padding:0;
+ text-indent:-9999px;
+ width:20px;
+ height:20px;
+}
+/*the hover effect*/
+.effect .mask {
+ opacity: 0;
+ overflow:visible;
+ border:100px solid rgba(0,0,0,0.7);
+ box-sizing:border-box;
+ transition: all 0.4s ease-in-out;
+}
+
+.effect a.info {
+ position:relative;
+ top:-10px; /* Center the link */
+ opacity: 0;
+ transition: opacity 0.5s 0s ease-in-out;
+}
+
+.effect:hover .mask {
+ opacity: 1;
+ border:100px solid rgba(0,0,0,0.7);
+}
+
+.effect:hover a.info {
+ opacity:1;
+ transition-delay: 0.3s;
+}
 
