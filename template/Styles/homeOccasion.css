@@ -17,7 +17,7 @@ h2 {
  max-height: 320px;
  margin: 10px;
  float: none;
- border: 10px solid #FBFBFB;
+ border: 10px solid #EFEFEF;
  overflow: hidden;
  position: relative;
  text-align: center;
@@ -42,7 +42,7 @@ h2 {
 .subCategory h3.info {
  color: #FFFFFF;
  display: inline-block;
- font-size: 2em;
+ font-size: 2.3em;
  text-transform: uppercase;
  margin-left: -180px;
  margin-top: -30px;
@@ -52,7 +52,7 @@ h2 {
 .effect .mask {
  opacity: 0;
  overflow:visible;
- border:165px solid rgba(0,0,0,0.7);
+ border:175px solid rgba(0,0,0,0.7);
  box-sizing:border-box;
  transition: all 0.4s ease-in-out;
 }
@@ -66,7 +66,7 @@ h2 {
 
 .effect:hover .mask {
  opacity: 1;
- border:165px solid rgba(0,0,0,0.7);
+ border:175px solid rgba(0,0,0,0.7);
  margin-top: -20px;
 }
 
