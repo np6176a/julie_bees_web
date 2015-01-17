@@ -60,6 +60,7 @@ h2 {
 .subCategory img {
  display: block;
  position: relative;
+ width: 100%;
 }
 
 .subCategory a.info {
