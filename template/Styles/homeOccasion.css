@@ -49,7 +49,7 @@ h2 {
 }
 
 .subCategory .mask, .subCategory .content {
- width: 330px;
+ width: 500px;
  height: 330px;
  position: absolute;
  overflow: hidden;
@@ -63,10 +63,13 @@ h2 {
  max-width: 100%;
 }
 
-.subCategory a.info {
+.subCategory h3.info {
  color: #FFFFFF;
  display: inline-block;
- text-decoration: none;
+ font-size: 2em;
+ text-transform: uppercase;
+ margin-left: -180px;
+ margin-top: -30px;
  padding:0;
 }
 /*the hover effect*/
