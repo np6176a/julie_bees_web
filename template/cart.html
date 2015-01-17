@@ -1,0 +1,32 @@
+%%Panel.HTMLHead%%
+<link rel="stylesheet" type="text/css" href="%%ASSET_Styles/store.css%%">
+    <body>
+        <script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/cart.js?%%GLOBAL_JSCacheToken%%"></script>
+        %%Panel.DrawerMenu%%
+        <div class="page cart">
+            %%Panel.Header%%
+            <div class="main container">
+                <div class="inner">
+                    <div class="Content Widest" id="LayoutColumn1">
+                        <!-- %%Panel.CartBreadcrumb%% -->
+                        %%Panel.CartHeader%%
+                        <div class="fullwidth">
+                            %%Panel.CartStatusMessage%%
+                            %%Panel.CartContent%%
+                            <div class="CartCode row">
+                                <div class="col-md-6 col-sm-6">
+                                %%Panel.CartCouponCodeBox%%
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                %%Panel.CartGiftCertificateCodeBox%%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            %%Panel.Footer%%
+        </div>
+    </body>
+</html>

@@ -1,0 +1,200 @@
+
+.SortBox,.AddToWishlistLink .wishlist-button {
+color:#5c5c5c
+}
+
+.TopMenu {
+color:#8f8f8f;
+
+}
+
+.TopMenu a {
+color:#696865
+}
+
+.TopMenu a:hover {
+color:#5c5c5c
+}
+
+.PageMenu .inner {
+background:#fff
+}
+
+.PageMenu li ul {
+background:#FBFBFB
+}
+
+.PageMenu li ul:before {
+border-color:transparent transparent #696866 transparent
+}
+.header {
+
+}
+.page {
+
+}
+.footer-main {
+
+}
+.footer-links {
+
+color:#9c9c9c
+}
+.footer-links a {
+color:#c2c2c2
+}
+.footer-links a:hover {
+color:#9c9c9c
+}
+.newsletter-subscription {
+
+}
+body,input,select,textarea,input.Textbox,input [type= "text " ],#SearchForm input,.HorizontalFormContainer dd .selector span,.fastCartTop div,.list-icon li {
+color:#5c5c5c;
+}
+#ModalContent,.ModalContent,.CurrencyChooser a span {
+color:#5c5c5c !important;
+}
+
+a,.header-logo a,.Left li li a,.Left #SideCategoryList li a,.Left .slist li a,.Left .afterSideShopByBrand a,.Left #GiftCertificatesMenu li a,.Left #SideAccountMenu li a,.Left #SideCategoryList li li a,.Left .slist li li a,.TabNav li.Active a,.ModalContent h4 a:hover,.footer a:hover {
+color:#5c5c5c;
+}
+
+.page-content #LayoutColumn2 a.pname,#ModalContent a,.ModalContent a,.recaptchatable a {
+color:#5c5c5c !important;
+}
+
+.Left li a.active:hover {
+border-color:#5c5c5c;
+}
+
+.icon-add:hover {
+background-color:#5c5c5c !important;
+}
+
+.multiStep li a {
+color:#9c9c9c;
+}
+
+.Left li a.active,a:hover,a.alt,p a,a.NextLink,.BulkDiscountLink a,.currency-converter p span,.BlockContent.PageContent a,.page-content #LayoutColumn2 a,.Left #SideCategoryList li a:hover,.Left .slist li a:hover,.Left .afterSideShopByBrand a:hover,.Left #GiftCertificatesMenu li a:hover,.Left #SideAccountMenu li a:hover,.PageMenu li ul li a:hover {
+color:#B4823B;
+}
+
+.recaptchatable a:hover,.page-content #LayoutColumn2 a.pname:hover,#ModalContent a:hover,.ModalContent a:hover {
+color:#B4823B !important
+}
+
+a.alt:hover {
+background-color:#B4823B;
+color:#fff
+}
+
+.multiStep li.ActivePage h4 {
+border-bottom:4px solid #B4823B;
+}
+.icon-add {
+background:#B4823B url( "../images/add.png ") no-repeat scroll 50% 50%
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+font-family: "Source Sans Pro",Arial,Sans-serif;
+color:#5c5c5c
+}
+
+h1,.h1 {
+font-family: "Source Sans Pro",Arial,Sans-serif;
+color:#B4823B;
+text-align: center;
+}
+
+.productOptionViewProductPickListWithImage td {
+border-bottom:1px dotted #fff
+}
+
+.TopMenu li.Flag img.Selected {
+border:2px solid #fff
+}
+
+.productOptionViewRectangle .option.selectedValue label {
+}
+
+.productOptionPickListSwatch .selectedValue .textureContainer,.productOptionPickListSwatch .selectedValue .swatchColours {
+border:1 !important;
+border-color:#595959 !important
+}
+
+.productOptionPickListSwatch .textureContainer,.productOptionPickListSwatch .swatchColours,.productOptionViewRectangle .option label,.recaptchatable #recaptcha_response_field,.zoomWrapper,#ProductDetails .ProductTinyImageList ul li.selected {
+border:1 !important
+}
+
+.CurrencyList dd,#SearchForm .Button,#SearchForm input.Textbox,select,hr,input.Textbox,textarea,input [type= "text " ],input [type= "password " ],.QuickSearch,.SharePublicWishList,.ExpressCheckoutBlock .ExpressCheckoutTitle,.TabNav li a,.HowToPay,.NotifyMessage,.QuickSearchResult .QuickSearchResultImage,.CurrencyChooser,.selected-currency,div.uploader,div.selector,.recaptchatable {
+border:1
+}
+
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent,div.uploader span.action {
+border-left:1
+}
+
+.TitleHeading,.TabNav {
+border-bottom:1
+}
+
+.ProductList.List .ProductDetails {
+border-top:1
+}
+
+.btn {
+background-color:#B4823B!important;
+color:#fff
+}
+
+.btn:hover {
+background-color:#232323!important;
+color:#fff
+}
+
+.btn.alt {
+background-color:#B4823B;
+color:#fff
+}
+
+a.btn.alt {
+color:#fff
+}
+
+.btn.alt:hover {
+background-color:#232323;
+}
+
+.btn.text {
+color:#FFFFFF;
+}
+
+.TopMenu >.inner,#Header >.inner,.PageMenu >.inner,.main >.inner,.footer-main >.inner,.footer-links >.inner,.newsletter-subscription >.inner {
+max-width:960;
+}
+
+@media screen and (max-width:768px) {
+.TabNav li.Active a {
+border-bottom:1
+}
+}
+
+@media screen and (max-width:600px) {
+.BillingDetails,.ShippingDetails {
+border-top:1
+}
+}
+
+@media screen and (max-width:480px) {
+#cart-amount .Cart .total {
+background:#5c5c5c;
+color:#fff
+}
+
+#cart-amount .Cart .bag-handle {
+border:2px solid #5c5c5c
+}
+}
+
+

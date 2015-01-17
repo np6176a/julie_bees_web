@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="%%ASSET_Styles/custom.css%%">
+<script type="text/javascript">
+    function combineSubmit(e,id){
+        document.getElementById(id).value =  e.value;
+        e.form.submit();
+    }
+</script>
+<div class="sorttop">
+<div class="SortBox " id="SortBox">
+    <form action="%%GLOBAL_URL%%" method="get" class="row">
+        %%GLOBAL_HiddenSortField%%
+        <input type="hidden" name="sort" id="SortSingle" value="newest"/>
+        <div class="col-md-12 col-sm-12 col-xs-12 txtC hidden-xs sort">
+            <select id="sort1" onchange="combineSubmit(this,'SortSingle');">
+                <option %%GLOBAL_SortFeaturedSelected%% value="featured">%%LNG_FeaturedItems%%</option>
+                <option %%GLOBAL_SortNewestSelected%% value="newest">%%LNG_NewestItems%%</option>
+                <option %%GLOBAL_SortBestSellingSelected%% value="bestselling">%%LNG_Bestselling%%</option>
+            </select>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 mid txtC hidden-xs sort">
+            <select id="sort" onchange="combineSubmit(this,'SortSingle');">
+                <option %%GLOBAL_SortAlphaAsc%% value="alphaasc">%%LNG_AlphaAsc%%</option>
+                <option %%GLOBAL_SortAlphaDesc%% value="alphadesc">%%LNG_AlphaDesc%%</option>
+                <option %%GLOBAL_SortAvgReview%% value="avgcustomerreview">%%LNG_AvgCustomerReview%%</option>
+            </select>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 txtC hidden-xs sort">
+            <select id="sort2" onchange="combineSubmit(this,'SortSingle');">
+                <option %%GLOBAL_SortPriceAsc%% value="priceasc">%%LNG_PriceAsc%%</option>
+                <option %%GLOBAL_SortPriceDesc%% value="pricedesc">%%LNG_PriceDesc%%</option>
+            </select>
+        </div>
+        <div class="col-xs-12 txtC visible-xs">
+            <label>Sort by:</label>
+            <select id="sort3" onchange="combineSubmit(this,'SortSingle');">
+                    <option %%GLOBAL_SortFeaturedSelected%% value="featured">%%LNG_FeaturedItems%%</option>
+                    <option %%GLOBAL_SortNewestSelected%% value="newest">%%LNG_NewestItems%%</option>
+                    <option %%GLOBAL_SortBestSellingSelected%% value="bestselling">%%LNG_Bestselling%%</option>
+                    <option %%GLOBAL_SortAlphaAsc%% value="alphaasc">%%LNG_AlphaAsc%%</option>
+                    <option %%GLOBAL_SortAlphaDesc%% value="alphadesc">%%LNG_AlphaDesc%%</option>
+                    <option %%GLOBAL_SortAvgReview%% value="avgcustomerreview">%%LNG_AvgCustomerReview%%</option>
+                    <option %%GLOBAL_SortPriceAsc%% value="priceasc">%%LNG_PriceAsc%%</option>
+                    <option %%GLOBAL_SortPriceDesc%% value="pricedesc">%%LNG_PriceDesc%%</option>
+            </select>
+        </div>
+    </form>
+</div>
+</div>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= $('.sorttop').offset().top){
+            if(!$('#SortBox').hasClass('fixedtop'))
+            $('#SortBox').addClass('fixedtop');
+        } else {
+             if($('#SortBox').hasClass('fixedtop'))
+             $('#SortBox').removeClass('fixedtop');
+        }
+        
+    })
+</script>

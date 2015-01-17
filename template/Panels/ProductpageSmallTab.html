@@ -1,0 +1,57 @@
+
+<div id="ProductTabListVertical"  class="col-md-12 ProductTabList">
+    <ul id="tabs" class="resp-tabs-list">
+        <li class="Tablist Tablist7"><a href="#Tablist7">Description</a></li>
+        <li class="Tablist Tablist1"><a href="#Tablist1">Style Guide</a></li>
+        <li class="Tablist Tablist3" id="ReviewLi"><a href="#Tablist3">Reviews</a></li>
+        <li class="Tablist Tablist8"><a href="#Tablist8">Products By Tag</a></li>
+        <li class="Tablist Tablist9"><a href="#Tablist9">By Category</a></li>
+        <li class="Tablist Tablist10"><a href="#Tablist10">Product Vendors</a></li>
+        <li class="Tablist Tablist5"><a href="#Tablist5">Recently Viewed</a></li>
+        <li class="lasttab Tablist Tablist6"><a href="#Tablist6">Other details</a></li>
+    </ul>
+    <div class="Productinner resp-tabs-container">
+        <div id="Tablist7" class="Tablist11" >%%Panel.ProductWarranty%%</div>
+        <div id="Tablist1" class="Tablist11" >%%Panel.ProductDescription%%</div>
+        <div id="Tablist3" class="Tablist11" >%%Panel.ProductReviews%%</div>
+        <div id="Tablist8" class="Tablist11" >%%Panel.SimilarProductsByTag%%</div>
+        <div id="Tablist9" class="Tablist11" >%%Panel.ProductByCategory%%</div>
+        <div id="Tablist10" class="Tablist11" >%%Panel.ProductVendorsOtherProducts%%</div>
+        <div id="Tablist5" class="Tablist11" >%%Panel.SimilarProductsByCustomerViews%%</div>
+        <div id="Tablist6" class="Tablist11" >%%Panel.ProductOtherDetails%%</div>
+    </div>
+</div>
+<script>
+    $('#ProductTabListVertical').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+        $(document).ready(function(){
+             $("#Mytabs li").click(function() {
+                $("#Mytabs li").removeClass('active');
+                $(this).addClass("active");
+                $(".Tablistdiv").hide();
+                var selected_tab = $(this).find("a").attr("href");
+                $(selected_tab).fadeIn();
+                return false;
+            });
+        });
+        $(".Productinner  .Tablist11, .Productinner  .Tablistdiv").each(function(){
+            if($.trim( $(this).text()) == "")
+            {
+               $(this).addClass("emptyDiv");
+            };
+        });
+        
+        $(".emptyDiv").each(function(){
+            var emptyDivId = $(this).attr('id');
+            $(this).parent().parent().parent().children().children().find("a[href$="+emptyDivId+"]").parent().addClass("emptyTablist");
+        });
+        
+        var disabletab = $('#Mytabs').find('.emptyTablist');
+        
+        if(disabletab.length) {
+            $("#Mytabs").addClass('emptyTablist');
+        }
+</script>

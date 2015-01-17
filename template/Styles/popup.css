@@ -1,0 +1,177 @@
+/* Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* General */
+
+body{
+    color: #333;
+    font-size: 14px;
+    font-family: Arial, Sans-Serif;
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+input, select, textarea {
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Headings */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #696865;
+    font-family: "Source Sans Pro",Arial,Sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 900;
+    padding: 0 0 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+}
+
+h5 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+}
+
+a {
+    color: #5C5C5C;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+a:hover{
+    color: #B4823B;
+    text-decoration: underline;
+}
+
+
+a.disabled, a.disabled:hover {
+    background-color: transparent;
+    color: #232323;
+}
+
+img, a img {
+    border:none;
+}
+
+/* Page Breadcrumbs */
+.Nav {
+    font-size: 0.9em;
+    padding-bottom: 4px;
+    clear:both;
+    padding-top:15px;
+    text-align: center;
+}
+
+.ImageCount {
+    color:gray; font-size:12px;text-align: center;
+}
+
+.ProductTinyImageList ul li {
+    border: 1px solid #D4D4D4 !important;
+    display: inline-block;
+    float: none !important;
+    height: auto !important;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    width: auto !important;
+}
+
+.ProductTinyImageList ul li div {
+    display: table-cell;
+    height: auto !important;
+    text-align: center;
+    width: auto !important;
+}
+
+.ProductTinyImageList ul li .TinyOuterDiv {
+    border: 0px solid white;
+    display: block;
+padding: 5px 10px 0;
+}
+
+.ProductTinyImageList a:hover {
+    background: none;
+}
+
+.ProductZoomImageBox {
+    display:table-cell;
+}
+
+.ProductZoomImageBox, .ProductZoomImageBox *{
+    margin:auto;
+    vertical-align: middle;
+
+}
+
+
+.ProductTinyImageList ul {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 100% !important;
+}
+
+#ImageScrollPrev,
+#ImageScrollNext {
+    float: left;
+    background:none;
+    border:none;
+    margin-top:25px !important;
+    cursor:pointer;
+    display: none;
+}
+
+.ProductTinyImageList {
+    float: left;
+    margin: 10px auto 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100% !important; 
+}
+
+.ImageCarousel {
+    width: auto !important;
+}
+.TinyOuterDiv img {
+    padding: 0 !important;
+}

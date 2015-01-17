@@ -1,0 +1,59 @@
+<!-- the recent blog post section -->
+<!-- <div class="RecentNews" id="HomeRecentBlogs" style="display:%%GLOBAL_HideHomeRecentBlogsPanel%%">
+    <h4>Recent Blog</h4>
+    <span class="Our_span"></span>
+    <ul>
+        %%SNIPPET_RecentBlogs%%
+    </ul>
+</div>
+<script type="text/javascript">
+    $('#HomeRecentBlogs ul li:last').remove();
+    $("#HomeRecentBlogs ul > li > .blogImage").each(function() {
+    var url = $(this).siblings('a').attr("href");
+        url = url.replace('http://','');
+        url = url.replace('https://','');
+        url = url.substring(url.indexOf("/"), url.length );
+        url =  config.ShopPath + url;
+    var host =  window.location.host;
+    var url = url.replace("%%GLOBAL_ShopPath%%","" );
+    $(this).load(url + " #NewsContent img", function(response, status) {
+    if (status == "success")
+    {
+    if($.trim($(this).html()) == "")
+    $(this).html('<img style="width: 50px;" src ="%%GLOBAL_TPL_PATH%%/images/craze/noblogimage.png" alt="No Image" />');
+    $(this).html($(this).find('img').eq(0).width(50));
+    }
+    });
+    });
+</script>
+ -->
+
+ <!-- the info section -->
+ <div class="RecentNews">
+    <h4>Info</h4>
+    <span class="Our_span"></span>
+        <ul>
+            <li><a href="%%GLOBAL_ShopPath%%/shipping-returns/">Shipping & Returns</a></li>
+            <li><a href="%%GLOBAL_ShopPath%%/store-policies/">Store Policies</a></li>
+            <li><a href="%%GLOBAL_ShopPath%%/size-guide/">Sizing Guide</a></li>
+        </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

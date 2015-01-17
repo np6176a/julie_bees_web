@@ -1,0 +1,42 @@
+%%Panel.HTMLHead%%
+    <link rel="stylesheet" type="text/css" href="%%ASSET_Styles/_customcategory.css%%" />
+    <body>
+        %%Panel.DrawerMenu%%
+        <div class="page categorypage">
+            %%Panel.Header%%
+            <div class="main container">
+                <div class="inner">
+                    %%Panel.WrapperBanner%%
+                    <h1>%%GLOBAL_CatName%%</h1>
+                    <div class="productlist-page Content">
+                        <!-- %%Banner.TopBanner%% -->
+
+                        <!-- slideout menu beginning -->
+                        <a href='#' class="button slideout-menu-toggle">
+                            <div class="sidemenu">
+                                <i class="arrow fa fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <div class="slideout-menu">
+                            <h3> Search Filters <a href="#" class="slideout-menu-toggle"><i class="arrowRev fa fa-angle-left"></i></a></h3>
+                            <ul class="product-nav">
+                                <li class="text">View %%Panel.ListGrid%%</li>
+                                <li class="text">%%Panel.SideShopByBrandFull%%</li>
+                                <li class="text  inlineBlock">Sort By: %%SNIPPET_CategorySortBox%%</li>
+                                <li class="text">Category: %%Panel.CategoryHeading%%</li>
+                            </ul>
+                        </div>
+                        <!-- end of slideoutmenu -->
+                        <div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn1">
+                            %%Panel.CategoryContent%%
+                        </div>
+                        %%Banner.BottomBanner%%
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            %%Panel.Footer%%
+        </div>
+    <script type="text/javascript" src="%%ASSET_js/_customCategory.js%%"></script>
+    </body>
+</html>

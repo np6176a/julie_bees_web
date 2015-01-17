@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="%%ASSET_Styles/custom.css%%">
+<div class="Conntectwopanel">
+            <div id="ProductTabList" class="Main_inner">
+                  <div class="ProductTabList_inner">
+                    <ul id="tabs">
+                        <li class="active Tablist Tablist1"><a href="#Tablist1">Featured</a></li>
+                        <li class="lasttab Tablist Tablist2"><a href="#Tablist2">New Arrivals</a></li>
+                          </ul>
+                  </div>
+                 
+                  <div class="Productinner">
+                        <div class="ProductTabList_innerlist">
+                            <div id="Tablist1" class="Tablist11" style="display: block; ">%%Panel.HomeFeaturedProducts%%</div>
+                            <div id="Tablist2" class="Tablist11" style="display: none; ">%%Panel.HomeNewProducts%%</div>
+            
+                    
+                        </div>
+                  </div>
+            </div>
+            
+</div> 
+                  
+                 
+<script>
+
+      $(document).ready(function() {            
+        $("#tabs li").click(function() {
+        $("#tabs li").removeClass('active');
+        $(this).addClass("active");
+        $(".Tablist11").hide();
+        var selected_tab = $(this).find("a").attr("href");
+        $(selected_tab).fadeIn();
+        return false;
+    });
+      });
+</script>
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+                    <li class="CompareItem icon-link" style="display:none">
+                            <a href="javascript:void(0)" onclick="compareNow()"><i class="fa fa-exchange"></i><p class="menu-text">Compare<span></span></p></a>
+                            <div style="display: none;" id="ComparePanel">
+                                    <div style="" class="comparisionBox">
+                                        <h3>Comparision List</h3>
+                                        <div class="BlockContent listing">
+                                        <ul>
+                                        </ul>
+                                            <p style="padding-top:15px;" class="Clear">
+                                                <a class="CompareNowLink" onclick="compareNow();" href="javascript:void(0)">Compare Now</a>
+                                            </p>
+                                        </div>
+                                        <div class="empty BlockContent" style="display: none;">
+                                            <p>There are no products to compare</p>
+                                        </div>
+                                    </div>
+                            </div>
+                    </li>
+                    <script>
+                        $('.CompareItem').hover(function(){ $('#ComparePanel').fadeIn(200); } , function(){ $('#ComparePanel').fadeOut(200)} )
+                    </script>
+

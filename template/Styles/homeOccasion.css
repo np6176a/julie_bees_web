@@ -1,0 +1,33 @@
+h2 {
+	font-size: 36px !important;
+	font-weight: 600;
+	text-align: center;
+}
+.Category {
+    text-align: center!important;
+}
+.Category > li {
+   -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    height: auto !important;
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: top;
+    border: 10px solid #FBFBFB;
+    width: 330px;
+    max-height: 330px;
+    float: none;
+    margin: 0 20px;
+}
+.Category > li:hover{
+    border-color: #f3f3f3;
+}
+
+.subCategory a > img {
+	max-width: 100%;
+}
+
+

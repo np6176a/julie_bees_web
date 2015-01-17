@@ -1,0 +1,76 @@
+<link rel="stylesheet" type="text/css" href="%%ASSET_Styles/font-awesome.css%%">
+<div class="TopMenu">
+    <div class="inner">
+        <ul style="display:%%GLOBAL_HidePurchasingOptions%%">
+            <li class="FloatLeft header-main">
+                <h4>Free Shipping</h4>
+            </li>
+            <li %%GLOBAL_ShowStorePhoneNumber%% class="phoneNo">
+                <div class="phoneIcon"><i class="glyphicon glyphicon-phone-alt"></i>%%GLOBAL_StorePhoneNumber%%</div>
+            </li>
+            <li class="FloatLeft">
+                %%Panel.SideCurrencySelector%%
+            </li>
+            <li style="display:%%GLOBAL_HideAccountOptions%%" class="First icon-link">
+                <a href="%%GLOBAL_ShopPath%%/account.php"><i class="fa fa-user"></i><span class="menu-text">Account</span></a>
+            </li>
+            <li style="display:%%GLOBAL_HideAccountOptions%%" class="icon-link">
+                <script type="text/javascript">
+                //<![CDATA[
+                var GlobalFname="%%GLOBAL_CurrentCustomerFirstName%%";
+                if (GlobalFname!="" && GlobalFname!="Guest")
+                {
+                    document.writeln ('<a class="Signout" href="%%GLOBAL_ShopPath%%/login.php?action=logout"><i class="fa fa-key"></i><span class="menu-text">Logout</span></a>');
+                } else {
+                    document.writeln ('<a class="Signin" href="%%GLOBAL_ShopPath%%/login.php"><i class="fa fa-key"></i><span class="menu-text">Login</span></a>');
+                }
+                //]]>
+                </script>
+            </li>
+            %%Panel.ComparePanel%%
+            <li style="display:%%GLOBAL_HideAccountOptions%%" class="icon-link">
+                <a href="%%GLOBAL_ShopPath%%/wishlist.php"><i class="wishLink fa fa-heart"></i><span class="menu-text">wishlist</span></a>
+            </li>
+            <li class="last TopCart icon-link" style="display:%%GLOBAL_HideCartOptions%%">
+               <a href="%%GLOBAL_ShopPathNormal%%/cart.php" title="%%LNG_ViewCart%%"><i class="fa fa-shopping-cart"></i><span class="menu-text"><span class="cart_item"></span></span></a>
+                <div class="dropdownCart" style="display: none;">
+                    <div class="filledcart">%%Panel.SideCartContents%%</div>
+                    <div class="emptycart"><h3>Your Shopping Cart</h3><div> There are no items in your cart </div> </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+
+    if($(".dropdownCart .filledcart #SideCartContents").text() == null || $(".dropdownCart .filledcart #SideCartContents").text() == "" ){
+        $(".dropdownCart .filledcart").hide();
+        $(".dropdownCart .emptycart").show();
+    }else{
+        $(".dropdownCart .filledcart").show();
+        $(".dropdownCart .emptycart").hide();
+    }
+    
+    $('.TopCart').hover(
+        function(){            
+            $(".dropdownCart").fadeIn(100);
+        }
+        ,
+        function(){
+            $(".dropdownCart").fadeOut(100);
+        }
+    );
+    
+    var cartCount = "%%GLOBAL_CartItems%%"
+    if(cartCount != ""){
+            $(".cart_item").html(cartCount);
+    }
+    else {
+        $(".cart_item").html('(0 item)');
+    }
+    
+    $('.CurrencyChooser .selected-currency').click(function(){
+        $('.CurrencyChooser .BlockContent').toggle();        
+    })
+</script>
