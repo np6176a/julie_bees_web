@@ -32,21 +32,25 @@ h2 {
 /*}*/
 
 .subCategory {
- width: 300px;
- height: 200px;
+ -moz-box-sizing: border-box;
+ display: inline-block;
+ list-style: none outside none;
+ padding: 0;
+ vertical-align: top;
+ width: 330px;
+ max-height: 330px;
  margin: 10px;
- float: left;
- border: 5px solid #fff;
+ float: none;
+ border: 10px solid #FBFBFB;
  overflow: hidden;
  position: relative;
  text-align: center;
- box-shadow: 0px 0px 5px #aaa;
  cursor: default;
 }
 
 .subCategory .mask, .subCategory .content {
- width: 300px;
- height: 200px;
+ width: 330px;
+ height: 330px;
  position: absolute;
  overflow: hidden;
  top: 0;
@@ -59,12 +63,13 @@ h2 {
 }
 
 .subCategory a.info {
+ color: #FFFFFF;
  display: inline-block;
  text-decoration: none;
  padding:0;
  text-indent:-9999px;
- width:20px;
- height:20px;
+ /*width:20px;*/
+ /*height:20px;*/
 }
 /*the hover effect*/
 .effect .mask {
@@ -84,7 +89,7 @@ h2 {
 
 .effect:hover .mask {
  opacity: 1;
- border:100px solid rgba(0,0,0,0.7);
+ border:160px solid rgba(0,0,0,0.7);
 }
 
 .effect:hover a.info {
