@@ -73,7 +73,7 @@ h2 {
 .effect .mask {
  opacity: 0;
  overflow:visible;
- border:100px solid rgba(0,0,0,0.7);
+ border:165px solid rgba(0,0,0,0.7);
  box-sizing:border-box;
  transition: all 0.4s ease-in-out;
 }
@@ -87,7 +87,7 @@ h2 {
 
 .effect:hover .mask {
  opacity: 1;
- border:160px solid rgba(0,0,0,0.7);
+ border:165px solid rgba(0,0,0,0.7);
 }
 
 .effect:hover a.info {
