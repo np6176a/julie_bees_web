@@ -1,0 +1,242 @@
+<link rel="stylesheet" type="text/css" media="screen" href="%%GLOBAL_productAttributesCssPath%%?%%GLOBAL_JSCacheToken%%" />
+<script type="text/javascript" src="%%GLOBAL_jQueryUIPath%%"></script>
+<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/jquery.form.js?%%GLOBAL_JSCacheToken%%"></script>
+<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/product.attributes.js?%%GLOBAL_JSCacheToken%%"></script>
+<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/jCarousel/jCarousel.js?%%GLOBAL_JSCacheToken%%"></script>
+%%SNIPPET_ProductImageZoomer%%
+
+<script type="text/javascript">//<![CDATA[
+var ThumbURLs = new Array();
+var ProductImageDescriptions = new Array();
+var CurrentProdThumbImage = %%GLOBAL_CurrentProdThumbImage%%;
+var ShowVariationThumb =false;
+var ProductThumbWidth = %%GLOBAL_ProductThumbWidth%%;
+var ProductThumbHeight =  %%GLOBAL_ProductThumbHeight%%;
+var ProductMaxZoomWidth = %%GLOBAL_ProductMaxZoomWidth%%;
+var ProductMaxZoomHeight =  %%GLOBAL_ProductMaxZoomHeight%%;
+var ProductTinyWidth = %%GLOBAL_ProductMaxTinyWidth%%;
+var ProductTinyHeight =  %%GLOBAL_ProductMaxTinyHeight%%;
+
+%%GLOBAL_ProdImageJavascript%%
+
+//Don't enable Zoomie (product image zoom) if on touch device
+//Mouseenter/Mouseover events are not ideal for touch devices
+//for more info search for this code in /script/main.js
+if (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)){   
+    var ShowImageZoomer = 0;
+} else {
+    var ShowImageZoomer = %%GLOBAL_ShowImageZoomer%%;
+}
+
+var productId = %%GLOBAL_ProductId%%;
+//]]></script>
+
+%%Discount.FreeShippingEligibility%%
+<div class="Block Moveable Panel PrimaryProductDetails no-ptop" id="ProductDetails">
+         
+            <h1 class="visible-xs" >%%GLOBAL_ProductName%%</h1>
+         
+         <div class="visible-xs sec-rat">
+                <div class="DetailRow Rating">
+                    <div class="Value">
+                        <span>
+                            <img  src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_Rating%%.png" alt="" />
+                            <span class="divRating">
+                                <a href="#ProductReviews" onclick="showTabReview(event);" id="ReviewListLink">
+                                    %%GLOBAL_ReviewLinkText%%
+                                </a>|
+                                <a class="reviewFormLink" onclick="showTabReview(event);" href="#">Add Your Review</a>
+                            </span>
+                        </span>
+                        <script>
+                        $(document).ready(function()
+                        { 
+                            var count = "%%GLOBAL_ReviewLinkText%%";
+                            if( !$.trim(count).length )
+                        {
+                            $("#ReviewListLink").html("0 Reviews");
+                             $("#ReviewListLink1").html("0 Reviews");
+                        };
+                        });
+                        </script>
+                    </div>
+                </div>
+         </div>
+    <div class="BlockContent row">
+        %%GLOBAL_ProductDetailFlashMessages%%
+        <!-- left-content -->
+        <div class="left-content col-md-7 col-sm-7">
+            <div class="ProductThumb row" style="%%GLOBAL_HideProductThumb%%" >
+                <div id="ProductTabList" class="ProductTabList">
+                  <div class="Productinner">
+                    <div class="ProductTabList_innerlist">
+                        <div id="Tablist111" class="Tablistdiv" style="display: block; ">
+                                <div class="ImageCarouselBox col-md-3 col-sm-4  col-xs-3" style="margin:0 auto; %%GLOBAL_HideImageCarousel%%">
+                                    <a id="ImageScrollPrev" class="prev" href="#" style="display: none;"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                                    <div class="ProductTinyImageList">
+                                        <ul>
+                                            %%SNIPPET_ProductTinyImages%%
+                                        </ul>
+                                    </div>
+                                    <a id="ImageScrollNext" class="next" href="#" style="display: none;"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                                </div>
+                                <div style="%%GLOBAL_HideMorePicturesLink%%" class="SeeMorePicturesLink">
+                                    <a href="#" onclick="%%GLOBAL_TinyImageClickJavascript%% return false;" class="ViewLarger">%%GLOBAL_SeeMorePictures%%</a>
+                                </div>
+                                %%GLOBAL_LightBoxImageJavascript%%
+                                <div class="ProductThumbOuter col-md-9 col-sm-8  col-xs-9">
+                                    %%SNIPPET_ProductThumbImage%%
+                                </div>
+                        </div>
+                        <div id="Tablist31" class="Tablistdiv" style="display: none; ">%%Panel.ProductVideos%%</div>
+                    </div>
+                  </div>
+                  <div class="ProductTabList_inner">
+                    <div class="col-md-3 col-sm-4 col-xs-3"></div>
+                    <ul id="Mytabs" class="col-md-9 col-sm-8 col-xs-9">
+                        <li class="active Tablist Tablistdiv"><a href="#Tablist111">Image</a></li>
+                        <li class="lasttab Tablist Tablistdiv"><a href="#Tablist31">Video</a></li>
+                    </ul>
+                  </div>
+                </div> 
+                
+            </div>
+            
+        </div>
+        <!-- Product Details Content -->
+        <div class="ProductMain col-md-5 col-sm-5">
+             
+            <h1 class="hidden-xs" >%%GLOBAL_ProductName%%</h1>
+            
+            <div class="ProductDetailsGrid">
+                <div class="DetailRow Rating hidden-xs">
+                    <div class="Value">
+                        <span>
+                            <img  src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_Rating%%.png" alt="" />
+                            
+                           <span class="divRating">
+                               <a href="#ProductReviews" onclick="showTabReview(event);" id="ReviewListLink1">
+                                    %%GLOBAL_ReviewLinkText%%
+                               </a>|
+                            <a class="reviewFormLink" onclick="showTabReview(event);" href="#">Add Your Review</a>
+                            </span>
+                        </span>
+                    </div>
+                    
+                </div>
+ <!-- details grid -->
+        <div class="DetailRow BrandName" style="display: %%GLOBAL_HideBrandLink%%">
+                    <div class="Label">Brand:</div>
+            <div class="Value" >
+               <a  href="%%GLOBAL_BrandLink%%">%%GLOBAL_BrandName%%</a>
+            </div>
+           
+        </div>
+        <!--<div class="DetailRow ProductSKU" style="display: %%GLOBAL_HideSKU%%">-->
+                    <!--<div class="Label">%%LNG_SKU%%:</div>-->
+                    <!--<div class="Value">-->
+                        <!--<span class="VariationProductSKU">-->
+                            <!--%%GLOBAL_SKU%%-->
+                        <!--</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+        <div class="DetailRow" style="%%GLOBAL_HideVendorDetails%%">
+            <div class="Label">%%LNG_Vendor%%:</div>
+            <div class="Value">
+                %%GLOBAL_VendorName%%
+            </div>
+        </div>
+
+        <div class="DetailRow" style="display: %%GLOBAL_HideCondition%%">
+            <div class="Label">%%LNG_Condition%%:</div>
+            <div class="Value">
+                %%GLOBAL_ProductCondition%%
+            </div>
+        </div>
+
+        <div class="DetailRow" style="display: %%GLOBAL_HideWeight%%">
+            <div class="Label">%%LNG_Weight%%:</div>
+            <div class="Value">
+                <span class="VariationProductWeight">
+                    %%GLOBAL_ProductWeight%%
+                </span>
+            </div>
+        </div>
+
+        <div class="DetailRow" style="display: %%GLOBAL_HideAvailability%%">
+            <div class="Label">%%LNG_Availability%%:</div>
+            <div class="Value">
+                %%GLOBAL_Availability%%
+            </div>
+        </div>
+
+        <div class="DetailRow" style="display: %%GLOBAL_HideShipping%%">
+            <div class="Label">%%LNG_Shipping%%:</div>
+            <div class="Value">
+                Free Shipping or %%GLOBAL_ShippingPrice%%
+            </div>
+        </div>
+
+        <div class="DetailRow" style="%%GLOBAL_HideMinQty%%">
+            <div class="Label">%%LNG_ProductMinQty%%:</div>
+            <div class="Value">
+                %%GLOBAL_MinQty%% %%LNG_units%%
+            </div>
+        </div>
+
+        <div class="DetailRow" style="%%GLOBAL_HideMaxQty%%">
+            <div class="Label">%%LNG_ProductMaxQty%%:</div>
+            <div class="Value">
+                %%GLOBAL_MaxQty%% %%LNG_units%%
+            </div>
+        </div>
+
+        <div class="DetailRow InventoryLevel" style="%%GLOBAL_HideCurrentStock%%">
+            <div class="Label">Inventory:</div>
+            <div class="Value">
+                <span class="VariationProductInventory">
+                    %%GLOBAL_InventoryList%%
+                </span>
+            </div>
+        </div>
+
+        <div class="DetailRow" style="%%GLOBAL_HideGiftWrapMessage%%">
+            <div class="Label">%%LNG_GiftWrapping%%:</div>
+            <div class="Value">
+                %%GLOBAL_GiftWrappingAvailable%%
+            </div>
+        </div>
+        <!-- details grid -->
+        %%GLOBAL_FacebookLikeButtonAbove%%
+            <div class="DetailRow PriceRow p-price" style="%%GLOBAL_HidePrice%%">
+                <div class="Value">
+                    <span class="ProductPrice VariationProductPrice">%%GLOBAL_RetailPrice%% %%GLOBAL_ProductPrice%% </span>                                         
+                </div>
+                <div class="s-price">
+                %%GLOBAL_IncludingExcludingTax%% %%GLOBAL_YouSave%%
+                </div>
+            </div>
+            </div>
+            
+            <div class="clear"></div>
+            %%SNIPPET_ProductAddToCartRight%%
+            %%SNIPPET_ProductExpectedReleaseDate%%
+            <div class="clear"></div>
+
+        </div>
+        %%SNIPPET_ProductAddToCartBelow%%
+        <div class="clear"></div>
+        <div class="">
+            %%Panel.ProductpageSmallTab%%
+        </div>
+    </div>
+</div>
+
+<script>
+    function showTabReview(event){
+        event.preventDefault();
+        $("#ReviewLi").click();
+        show_product_review_form();
+    }
+</script>
