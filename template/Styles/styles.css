@@ -3718,7 +3718,11 @@ a.ChangeLink {
 }
 
 .OutOfStockMessage {
-    padding: 0;
+    padding: 0 2px;
+    color: #D00019;
+    ont-size: 1.1em;
+    font-weight: 600;
+    border: 1px solid #D00019;
 }
 
 .OutOfStockMessage p {
