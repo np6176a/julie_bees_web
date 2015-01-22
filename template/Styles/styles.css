@@ -7244,6 +7244,8 @@ div.FacebookLikeButtonContainer iframe {
 .li-instagram .icon-instagram {
     background: url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/instagram.png?t=1421945322) 0 0 no-repeat !important;
     margin-top: 1px;
+    width: 26px !important;
+    height: 26px !important;
 }
 
 .li-instagram .icon-instagram:hover {
