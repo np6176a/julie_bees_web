@@ -145,7 +145,7 @@ border-top:1
 
 .btn {
 background-color:#B4823B!important;
-color:#fff
+color:#fff !important;
 }
 
 .btn:hover {
