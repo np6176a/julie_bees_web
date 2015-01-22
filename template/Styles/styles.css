@@ -7251,3 +7251,14 @@ div.FacebookLikeButtonContainer iframe {
 .li-instagram .icon-instagram:hover {
     background: url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/instagram1.png?t=1421945323) 0 0 no-repeat !important;
 }
+
+/*the polyvore icon*/
+.li-polyvore .icon-polyvore {
+    background: url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/polyvore.png?t=1421947346) 0 0 no-repeat !important;
+    margin-top: 1px;
+    width: 26px !important;
+    height: 26px !important;
+}
+
+.li-polyvore .icon-polyvore:hover {
+    background: url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/polyvore1.png?t=1421947347) 0 0 no-repeat !important;
