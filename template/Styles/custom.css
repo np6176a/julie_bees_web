@@ -124,3 +124,8 @@ a:hover , .footer a:hover{
 .SalePrice {
 	color: #D00019;
 }
+
+/*the tiny product image left orientation*/
+.TinyOuterDiv div a > img {
+	margin-left: 42%;
+}
