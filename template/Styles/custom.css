@@ -119,3 +119,8 @@ a:hover , .footer a:hover{
 	font-weight: 600;
 	max-width: 85%;
 }
+
+/*the Sale price color*/
+.SalePrice {
+	color: #D00019;
+}
