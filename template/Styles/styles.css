@@ -5322,7 +5322,7 @@ ul ul ul{
 }
 .addto .AddToWishlistLink  input, .addto .AddToWishlistLink  input:hover {
     background: url("https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/addicons.png?t=1421207288") no-repeat scroll 0 -41px rgba(0, 0, 0, 0) !important;
-    color: #696868;
+    color: #696868 !important;
     display: block;
     font-size: 15px;
     height: 28px;
