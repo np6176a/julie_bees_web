@@ -129,3 +129,8 @@ a:hover , .footer a:hover{
 .TinyOuterDiv div a > img {
 	margin-left: 42%;
 }
+
+/*the gift banner bottom space*/
+.giftbanner {
+	margin-bottom: 20px;
+}
