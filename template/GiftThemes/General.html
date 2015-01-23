@@ -11,7 +11,7 @@
 
     .GiftCertificate {
         border: none;
-        width: 375px;
+        width: 450px;
         border-collapse: collapse;
         margin: auto;
         background: url('https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/gift.png?t=1421985721') right no-repeat;
@@ -48,6 +48,7 @@
 
     .GiftCertificateBody {
         height: 80px;
+        background-color: #FDFDFD;
     }
 
     .StoreInfo, .StoreInfo a, h1, h1 a {
@@ -80,7 +81,7 @@
         text-align: center;
         padding-bottom: 5px;
         padding-top: 5px;
-        background: #E6F4FF;
+        background: #FDFDFD;
         font-weight: bold
     }
 
@@ -110,7 +111,9 @@
             <td class="GiftCertificateBody">
                 <div id="GiftCertificateAmount">%%GLOBAL_GiftCertificateAmount%%</div>
                 <div class="StoreInfo">
-                    %%GLOBAL_HeaderLogo%%
+                    <a href="http://julie-bee-amp--039-s.mybigcommerce.com/">
+                        <img src="https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/longlogo.jpg?t=1421178429" alt=""/>
+                    </a>
                 </div>
             </td>
         </tr>
@@ -136,7 +139,7 @@
         <tr>
             <td class="GiftCertificateShopNow">
                 <div class="GiftCertificateExpiry">%%GLOBAL_GiftCertificateExpiryInfo%%</div>
-                %%LNG_RedeemGiftCertificateAt%% <a href="%%GLOBAL_ShopPath%%/">%%GLOBAL_ShopPath%%/</a>
+                %%LNG_RedeemGiftCertificateAt%% <br/> <a href="%%GLOBAL_ShopPath%%/">%%GLOBAL_ShopPath%%/</a>
             </td>
         </tr>
     </table>
