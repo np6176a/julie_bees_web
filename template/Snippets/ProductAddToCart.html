@@ -5,11 +5,9 @@
     <input type="hidden" name="variation_id" class="CartVariationId" value="" />
     <input type="hidden" name="currency_id" value="" />
     <div class="ProductDetailsGrid ProductAddToCart">
-        
-       
-        
+
         %%SNIPPET_ProductFieldsList%%
-        
+
         <div class="ProductOptionList">
             %%SNIPPET_VariationList%%
         </div>
@@ -26,51 +24,56 @@
                 <span style="display: %%GLOBAL_DisplayAddQty%%;">
                     %%GLOBAL_AddToCartQty%%
                 </span>
-                
-            %%GLOBAL_PinterestButton%%
-            %%GLOBAL_AddThisLink%%
+
+                %%GLOBAL_PinterestButton%%
+                %%GLOBAL_AddThisLink%%
             </div>
         </div>
-        
+
         <div class="OutOfStockMessage">
             %%SNIPPET_SideAddItemSoldOut%%
         </div>
-        
+
         <div class="addto">
+
             <div class="row txtcenter-xxs addto-row1">
-                <div class="BulkDiscount col-md-6 col-sm-12" style="display: %%GLOBAL_DisplayAdd%%">
-                    
-                        <input type="submit" class="btn add-to-cart" value="%%LNG_ProductAddToCartLink%%" />
-                    
+                <div class="col-md-6 col-sm-12">
+                    <div class="BulkDiscount DetailRow" style="display: %%GLOBAL_DisplayAdd%%">
+                        %%GLOBAL_AddToCartButtonOptimizerScriptTag%%
+                        <input type="submit" class="btn add-to-cart AddCartButton" value="%%LNG_ProductAddToCartLink%%" />
+                        %%GLOBAL_AddToCartButtonOptimizerNoScriptTag%%
+                    </div>
                 </div>
-                <div class="BulkDiscountLink  col-md-6 col-sm-12" style="display: %%GLOBAL_HideBulkDiscountLink%%;">
-                    <a href="#" onclick="$.iModal({data: $('#ProductDetailsBulkDiscountThickBox').html(), width: 600}); return false;">
-                        %%LNG_BulkDiscountLink%%
-                    </a>
+                <div class="col-md-6 col-sm-12">
+                    <div class="BulkDiscountLink" style="display: %%GLOBAL_HideBulkDiscountLink%%;">
+                        <a href="#" onclick="$.iModal({data: $('#ProductDetailsBulkDiscountThickBox').html(), width: 600}); return false;">
+                            %%LNG_BulkDiscountLink%%
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="row addto-row2">
-            <!-- Custom Add to Compare -->
-            <div class="compare col-md-6 col-sm-12 col-xs-6">
-                <a onclick="addToCompare('%%GLOBAL_ProductId%%');" href="javascript:void(0)">Add to Compare</a>
-            </div>
-            <div style="display: none;">
-                <div id="img_%%GLOBAL_ProductId%%" class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%">
-                    <img src="%%GLOBAL_ThumbImageURL%%" alt="%%GLOBAL_ImageDescription%%" title="%%GLOBAL_ImageDescription%%" />
+                <!-- Custom Add to Compare -->
+                <div class="compare col-md-6 col-sm-12 col-xs-6">
+                    <a onclick="addToCompare('%%GLOBAL_ProductId%%');" href="javascript:void(0)">Add to Compare</a>
                 </div>
-                <div class="ProductDetails">
-                    <a id="link_%%GLOBAL_ProductId%%" data-href="%%GLOBAL_ProductLink%%" href="%%GLOBAL_ProductLink%%">%%GLOBAL_ProductName%%</a>
+                <div style="display: none;">
+                    <div id="img_%%GLOBAL_ProductId%%" class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%">
+                        <img src="%%GLOBAL_ThumbImageURL%%" alt="%%GLOBAL_ImageDescription%%" title="%%GLOBAL_ImageDescription%%" />
+                    </div>
+                    <div class="ProductDetails">
+                        <a id="link_%%GLOBAL_ProductId%%" data-href="%%GLOBAL_ProductLink%%" href="%%GLOBAL_ProductLink%%">%%GLOBAL_ProductName%%</a>
+                    </div>
                 </div>
-            </div>
-            <!-- //Custom Add to Compare -->
+                <!-- //Custom Add to Compare -->
 
-            <!-- Add to Wishlist -->
-            <div  class=" AddToWishlistLink col-md-6 col-sm-12 col-xs-6">
-                <input value="%%LNG_AddToWishList%%" type="button" class="btn alt  WishListButton" title="%%LNG_AddToWishList%%"/>
+                <!-- Add to Wishlist -->
+                <div  class=" AddToWishlistLink col-md-6 col-sm-12 col-xs-6">
+                    <input value="%%LNG_AddToWishList%%" type="button" class="btn alt  WishListButton" title="%%LNG_AddToWishList%%"/>
+                </div>
+
+                <!-- //Custom Add to Wishlist -->
             </div>
-            
-            <!-- //Custom Add to Wishlist -->
-            </div>  
         </div><!-- addto -->
     </div>
 </form>
@@ -103,28 +106,29 @@ var ShowAddToCartQtyBox = "%%GLOBAL_ShowAddToCartQtyBox%%";
 //]]></script>
 %%GLOBAL_EventDateJavascript%%
 <script type="text/javascript">
-$(window).load(function() {
-    if ($('.WishListButton:visible').size() != 0) {
-        
-        $('html').click(function() {
+    $(window).load(function() {
+        if ($('.WishListButton:visible').size() != 0) {
+
+            $('html').click(function() {
+                $('#SideProductAddToWishList .BlockContent').slideUp(300);
+            });
+
+
+            $('.WishListButton').click(function(event){
+                event.stopPropagation();
+                x = $('.WishListButton').offset().left;
+                y = $('.WishListButton').offset().top;
+                $('#SideProductAddToWishList').css('top', y).css('left', x).css('position', 'absolute').show();
+                $('#SideProductAddToWishList .BlockContent').slideToggle(300);
+            });
+            $('#SideProductAddToWishList .BlockContent').click(function(event){
+                event.stopPropagation();
+            });
+        }
+        $('.prodAccordion > div > h2').click(function(){
             $('#SideProductAddToWishList .BlockContent').slideUp(300);
-         });
-        
-        
-        $('.WishListButton').click(function(event){
-            event.stopPropagation();
-            x = $('.WishListButton').offset().left;
-            y = $('.WishListButton').offset().top;
-            $('#SideProductAddToWishList').css('top', y).css('left', x).css('position', 'absolute').show();
-            $('#SideProductAddToWishList .BlockContent').slideToggle(300);
         });
-        $('#SideProductAddToWishList .BlockContent').click(function(event){
-            event.stopPropagation();
-        });    
-    }
-    $('.prodAccordion > div > h2').click(function(){
-        $('#SideProductAddToWishList .BlockContent').slideUp(300);
-     });
-  });
+    });
 </script>
 
+​
