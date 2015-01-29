@@ -18,13 +18,13 @@ input, select, textarea {
     font-family: 'Source Sans Pro', Sans-Serif;
     font-size: 12px;
 }
- 
+
 /* Layout */
 
 .inner:after {
     clear: both;
     content: "";
-    display: table; 
+    display: table;
 }
 
 .TopMenu > .inner, #Header > .inner, .PageMenu > .inner, .main > .inner, .footer-main > .inner, .footer-links > .inner, .newsletter-subscription > .inner {
@@ -73,10 +73,10 @@ input, select, textarea {
 }
 
 .TopMenu .TopCart a {
-    
+
 }
 .TopMenu .TopCart span.cart_item {
-    
+
 }
 .TopMenu .TopCart span{
     width: auto;
@@ -88,7 +88,7 @@ input, select, textarea {
 .TopMenu a {
     margin: 0;
     padding: 0;
-    position: relative; 
+    position: relative;
     text-transform: uppercase;
 }
 .TopMenu li.last a {
@@ -106,7 +106,7 @@ input, select, textarea {
 
 /* Header */
 .header {
-   
+
 }
 .header #Header .inner
 {
@@ -265,7 +265,7 @@ a:hover{
 }
 
 strong, b {
-   font-weight: bold;
+    font-weight: bold;
     line-height: 18px;
 }
 
@@ -295,7 +295,7 @@ strong, b {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-     text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .btn.text {
@@ -353,7 +353,7 @@ h5, .h5 {
 }
 
 .footer-main, .footer-main a{
-    
+
 }
 
 .TitleHeading {
@@ -511,9 +511,9 @@ input[type="password"] {
     font-size: 14px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     border: 1px solid #EEEEEE;
-} 
+}
 .checkout_address  input[type="text"], .checkout_address input[type="password"] {
     width: 180px;
 }
@@ -831,7 +831,7 @@ textarea {
 }
 
 .Content .ProductList > li {
-   -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background: none repeat scroll 0 0 #FFFFFF;
     display: inline-block;
     font-size: 15px;
@@ -876,7 +876,7 @@ textarea {
 .ProductList .ProductPriceRating {
     padding-bottom: 5px;
     text-align: center;
-     padding-top: 5px;
+    padding-top: 5px;
 }
 
 
@@ -1283,7 +1283,7 @@ textarea {
 }
 
 .ComparisonTable td:first-child {
-   text-align: left;
+    text-align: left;
 }
 .CompareFieldName {
     width: 95px;
@@ -1762,7 +1762,7 @@ table.General tbody tr.First td {
 }
 
 .CurrencyList a .Text:hover {
-   color: #B4823B !important;
+    color: #B4823B !important;
 }
 
 .currency-converter {
@@ -1808,7 +1808,7 @@ table.General tbody tr.First td {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #CDCDCD ;
     display: none;
-    border-top: 2px solid #232323;    
+    border-top: 2px solid #232323;
     margin-top: 0;
     padding: 0 15px;
     position: absolute;
@@ -2032,10 +2032,10 @@ a.ChangeLink {
 }
 
 .SubBrandListGrid li {
-   background: none repeat scroll 0 0 #FFFFFF;
-   border: 10px solid #FBFBFB;
-   float: left;
-   text-align: center;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #FBFBFB;
+    float: left;
+    text-align: center;
 }
 
 .SubBrandListGrid ol {
@@ -2231,7 +2231,7 @@ p.AddCartButton {
     padding: 0;
     position: relative;
     width: 100% !important;
-     min-height: 1px !important;
+    min-height: 1px !important;
 }
 
 .ProductList.List .ProductImage {
@@ -2479,8 +2479,8 @@ p.AddCartButton {
 
 .productAttributeList li {
     margin-bottom: 0px;
-        margin-right: 5px;
-        float: left;
+    margin-right: 5px;
+    float: left;
 }
 
 .productAttributeList ul.list-horizontal {
@@ -2577,11 +2577,11 @@ ul.tabs li {
 /** If you change the width of the .VideoPreviewSize class below, change the padding-left of the .VideoContentContainer class above **/
 
 .VideoPreviewSize {
-    
+
 }
 
 .videoRowLength {
-    
+
 }
 
 .videoRow,
@@ -2592,7 +2592,7 @@ ul.tabs li {
 }
 
 #VideoList ul {
-    
+
 }
 
 #VideoContainer {
@@ -2768,7 +2768,7 @@ ul.tabs li {
     width: 0;
 }
 .PageMenu li ul li:before, .PageMenu li.ActivePage li:after, .PageMenu li li:hover:after{
-     content: none;
+    content: none;
 }
 .PageMenu li.ActivePage:after,
 .PageMenu li:hover:after {
@@ -2884,7 +2884,7 @@ ul.tabs li {
 }
 .PageMenu .pages-menu > li:last-child {
 }
- 
+
 .PageMenu li ul li a.hasSub {
     background: url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/sub.png?t=1421206126) 100% 50% no-repeat;
     padding-right: 20px;
@@ -3127,7 +3127,7 @@ ul.AccountOrdersList {
 }
 
 #recaptcha_whatsthis_btn img {
-visibility: hidden;isibility: hidden;
+    visibility: hidden;isibility: hidden;
 }
 
 .zoomWindow {
@@ -3671,7 +3671,7 @@ a.ChangeLink {
 }
 .productAttributeList .required
 {
-    display: none;
+    display: block;
 }
 .productPage .ProductDetailsGrid .Label,
 .ProductAddToCart .productAttributeLabel {
@@ -3844,7 +3844,7 @@ a.ChangeLink {
 }
 
 .fastCartSummaryBox .subtotal .ProductPrice {
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 .fastCartSummaryBox .actionLink {
@@ -3909,7 +3909,7 @@ a.ChangeLink {
 }
 
 .footer-main .inner {
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
 .subscribe_form ul {
@@ -4048,9 +4048,9 @@ a.ChangeLink {
     vertical-align: middle;
     padding-left: 18px;
     color: #5C5C5C;
-    
+
     filter: ~"alpha(opacity=30)"; /* Internet Explorer */
-              /* Chrome, Firefox, Opera, Safari */
+    /* Chrome, Firefox, Opera, Safari */
     -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=30)"; /* IE8 */
     -khtml-opacity: 0.30;
     -moz-opacity: 0.30; /* Old Firefox */
@@ -4058,9 +4058,9 @@ a.ChangeLink {
 }
 
 .footer .powered-by a:hover {
-    
+
     filter: ~"alpha(opacity=100)"; /* Internet Explorer */
-     /* Chrome, Firefox, Opera, Safari */
+    /* Chrome, Firefox, Opera, Safari */
     -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=100)"; /* IE8 */
     -khtml-opacity: 1;
     -moz-opacity: 1; /* Old Firefox */
@@ -4230,10 +4230,10 @@ select.JSHidden {
     margin-bottom: 10px;
 }
 .product-nav.btm{
-     text-align: center;
+    text-align: center;
 }
 .product-nav.btm > .Block{
-     margin: 20px 0 0!important;
+    margin: 20px 0 0!important;
 }
 .product-nav #CategoryPagingTop,
 .product-nav #CategoryPagingBottom,
@@ -4265,7 +4265,7 @@ select.JSHidden {
 }
 
 .CategoryContent {
-   
+
 }
 
 .SubBrandListGrid ul {
@@ -4580,9 +4580,9 @@ div.checker input {
 }
 
 div.checker span {
-background-position: 0px -55px;
-height: 18px;
-width: 16px;
+    background-position: 0px -55px;
+    height: 18px;
+    width: 16px;
 }
 
 div.checker span.checked,
@@ -4938,9 +4938,9 @@ div.radio input {
 -------------------------------------------------------------- */
 
 .brand-name{
-padding: 5px 0 5px 4%;
-text-align: left;
-min-height: 30px;
+    padding: 5px 0 5px 4%;
+    text-align: left;
+    min-height: 30px;
 
 }
 #CheckoutStepPaymentDetails input[type=submit] {
@@ -4952,7 +4952,7 @@ min-height: 30px;
 }
 
 .txt24{
-     font-weight: normal;
+    font-weight: normal;
     margin: 0;
 }
 
@@ -5083,12 +5083,12 @@ ul ul ul{
     color: #FFFFFF;
 }
 .multiStep li.ActivePage:after {
-   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #232323;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #232323;
 }
 
 .multiStep li.ActivePage:before {
-   border-color: #232323 rgba(0, 0, 0, 0);
-   
+    border-color: #232323 rgba(0, 0, 0, 0);
+
 }
 
 .multiStep li.ActivePage h4 {
@@ -5307,7 +5307,7 @@ ul ul ul{
     display: inline-block;
 
 }
-.addto .compare, .addto .AddToWishlistLink 
+.addto .compare, .addto .AddToWishlistLink
 {
     margin: 5px 0;
 }
@@ -5372,15 +5372,15 @@ a.CustomizeItemLink {
 }
 
 html.javascript .productOptionViewRectangle label {
-    
+
 }
 
 .fileInput {
-   margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .fileLimitations {
-   font-size: 13px;
+    font-size: 13px;
 }
 
 #TabContentAddressMultiple {
@@ -5588,7 +5588,7 @@ label.outStock span.name {
     float: left;
     padding: 0;
 }
-.TopMenu li.phoneNo .phoneIcon { 
+.TopMenu li.phoneNo .phoneIcon {
     color: #696865;
     float: left;
     font-size: 14px;
@@ -5661,11 +5661,11 @@ label.outStock span.name {
     font-size: 0;
     float:right;
 }
-.CartHover .total strong, .CartHover .BlockContent strong { 
+.CartHover .total strong, .CartHover .BlockContent strong {
     font-size: 13px;
     font-weight: bold;
     float:left;
-} 
+}
 .CartHover p
 {
     margin:0;
@@ -5716,7 +5716,7 @@ label.outStock span.name {
 }
 
 .Main_inner .Tablist.active > a {
-   background: url('https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/home-tab-bottom.png?t=1421207772')  no-repeat bottom center transparent;
+    background: url('https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/home-tab-bottom.png?t=1421207772')  no-repeat bottom center transparent;
 }
 
 #miniSearch {
@@ -5730,8 +5730,8 @@ label.outStock span.name {
 .miniSearch .fa.fa-search , .miniSearch .fa{
     font-size: 14px;
     padding: 8px;
-     margin: 0;
-     color: #656368;
+    margin: 0;
+    color: #656368;
 }
 
 .miniSearch {
@@ -5843,7 +5843,7 @@ label.outStock span.name {
 }
 .CompareItem{
     border-left: none !important;
-    width: auto;    
+    width: auto;
 }
 
 #ComparePanel , .dropdownCart  {
@@ -5951,7 +5951,7 @@ label.outStock span.name {
     text-align: left;
 }
 #SideCartContents .ProductList > li {
-  
+
     padding: 8px 0;
     text-align: left;
     width: 100%;
@@ -5975,7 +5975,7 @@ label.outStock span.name {
 #SideCartContents .product-image {
     float: left;
     width: 20%;
-     height: 65px;
+    height: 65px;
 }
 #SideCartContents .product-image img{
     max-height: 100%;
@@ -6108,8 +6108,8 @@ table.productAttributes tr td {
 }
 
 .productPage .ProductDetailsGrid .productAttributeList {
-   border-bottom: 1px solid #E4E4E4;
-   margin-bottom: 15px;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 15px;
 }
 .productPage .ProductDetailsGrid .qty input
 {
@@ -6117,7 +6117,7 @@ table.productAttributes tr td {
     border-radius: 4px;
     font-size: 13px;
     height: 28px;
-    line-height: 28px; 
+    line-height: 28px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -6143,18 +6143,18 @@ table.productAttributes tr td {
     color:#232323;
 }
 .Rating .Value span a.reviewFormLink {
-   border-bottom: 1px dotted #232323;
-   color: #5C5C5C;
-   display: inline-block;
-   font-size: 14px;
-   line-height: 17px;
-   margin-left: 3px;
-   text-transform: uppercase;
+    border-bottom: 1px dotted #232323;
+    color: #5C5C5C;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 3px;
+    text-transform: uppercase;
 }
 
 .productPage .ProductTabList .Tablist.emptyTablist, .Productinner .Tablist11.emptyDiv,
 .emptyTablist
-{ 
+{
     display:none;
 }
 .productPage .ProductTabList {
@@ -6173,7 +6173,7 @@ table.productAttributes tr td {
     margin: 0 0 0 -4px;
 }
 .productPage .ProductTabList ul li.lasttab.Tablist {
-    
+
 }
 .productPage .ProductTabList ul li.Tablist {
     background: none repeat scroll 0 0 #FBFBFB;
@@ -6207,14 +6207,14 @@ table.productAttributes tr td {
 }
 .productPage .ProductTabList li.resp-tab-active.Tablist:after
 {
-     background: url("https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/tab-active.png?t=1421207898") no-repeat scroll 100% center;
+    background: url("https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/tab-active.png?t=1421207898") no-repeat scroll 100% center;
     content: " ";
     display: block;
     height: 40px;
     position: absolute;
     right: -5px;
     top: 0;
-    width: 6px; 
+    width: 6px;
 }
 .productPage .ProductTabList li.Tablist a:hover{
     color: #B4823B;
@@ -6232,7 +6232,7 @@ table.productAttributes tr td {
 }
 .productPage .Productinner {
     border-color: #f3f3f3;
-    border-left: 1px solid #f3f3f3; 
+    border-left: 1px solid #f3f3f3;
     border-right: 1px solid #f3f3f3;
     border-style: solid;
     border-width: 1px;
@@ -6326,7 +6326,7 @@ table.productAttributes tr td {
 
 .searchpage .jstree-interspire .jstree-hovered{
     background: none repeat scroll 0 0 #EEEEEE;
-   border: 1px solid #eee;
+    border: 1px solid #eee;
 }
 #uniform-searchsubs + label {
     display: inline;
@@ -6511,7 +6511,7 @@ h2.resp-accordion {
 }
 
 #ProductTabListVertical li.resp-tab-active {
- 
+
 }
 
 .resp-arrow {
@@ -6536,7 +6536,7 @@ h2.resp-tab-active span.resp-arrow {
     background: #232323 !important;
 }
 .Content .resp-easy-accordion  h2.resp-accordion {
-        display: block;
+    display: block;
 }
 .Content .resp-easy-accordion .resp-tab-content {
     border: 1px solid #E4E4E4;
@@ -6587,7 +6587,7 @@ h2.resp-accordion:first-child {
 }
 .BlogPostContent .thumbnail {
     border: medium none;
-    border-radius:0px ;    
+    border-radius:0px ;
 }
 .col-2 .Content .TitleHeading, .Content .TitleHeading {
     border-bottom: 1px solid #EEEEEE;
@@ -6597,7 +6597,7 @@ h2.resp-accordion:first-child {
     padding-bottom: 10px;
 }
 .Left h2 {
-     color: #696868;
+    color: #696868;
 }
 
 .ExpressCheckoutContent h3 ,#ChooseShippingAddress h3 ,#CreateAccountForm h3 {
@@ -6627,8 +6627,8 @@ h2.resp-accordion:first-child {
     padding-bottom: 15px;
     text-transform: uppercase;
 }
-#CreateAccountForm #FormField_13,#CreateAccountForm  #FormField_23,#CreateAccountForm  #FormField_12 , #CreateAccountForm  #uniform-FormField_11 ,#CreateAccountForm #uniform-FormField_12{ 
-     width: 180px!important;
+#CreateAccountForm #FormField_13,#CreateAccountForm  #FormField_23,#CreateAccountForm  #FormField_12 , #CreateAccountForm  #uniform-FormField_11 ,#CreateAccountForm #uniform-FormField_12{
+    width: 180px!important;
 }
 .nbs-flexisel-ul {
     list-style-type: none;
@@ -6706,16 +6706,16 @@ h2.resp-accordion:first-child {
     margin-bottom: 0;
     padding: 0;
 }
-.categoryAccordion  li  li a {  
-    padding: 0 0 0 10px; 
+.categoryAccordion  li  li a {
+    padding: 0 0 0 10px;
 }
 .categoryAccordion  li  li span {
     padding: 0 10px 0 0;
     margin: 0;
-    
+
 }
-.categoryAccordion  li  li li a {  
-    padding: 0 0 0 20px; 
+.categoryAccordion  li  li li a {
+    padding: 0 0 0 20px;
 }
 .categoryAccordion  li  li li span {
     padding: 0 20px 0 0;
@@ -6832,8 +6832,8 @@ blockquote:before, blockquote:after {
     margin-top: 0;
 }
 .HowToPay{
-      background: none repeat scroll 0 0 #FBFBFB;
-      padding: 5px 20px 20px;
+    background: none repeat scroll 0 0 #FBFBFB;
+    padding: 5px 20px 20px;
 }
 
 .ReturnsList {
@@ -6895,7 +6895,7 @@ blockquote:before, blockquote:after {
 }
 .checkout_address .TabNav li.Active a{
     border: 1px solid #eee;
-     border-bottom-color: #fff;
+    border-bottom-color: #fff;
 }
 .checkout_address .TabNav li {
     display: inline-block;
@@ -7047,7 +7047,7 @@ blockquote:before, blockquote:after {
 
 #toTop .Backtop:hover {
     color: inherit;
-     border-radius: 30px;
+    border-radius: 30px;
 }
 .PageContent h2{
     text-transform: none;
@@ -7111,11 +7111,11 @@ div.FacebookLikeButtonContainer iframe {
     margin-top: 0;
 }
 .footer .Aboutus li {
-   padding: 2px 0;
+    padding: 2px 0;
 }
 .foot_span1 {
-   display: block;
-   margin: 0 0 10px;
+    display: block;
+    margin: 0 0 10px;
 }
 .boxin:last-child {
     border: medium none;
@@ -7189,9 +7189,9 @@ div.FacebookLikeButtonContainer iframe {
     content:none;
 }
 .CategoryDescription .SubCategoryList li {
-   float: left;
-   padding-right: 15px;
-   width: auto;
+    float: left;
+    padding-right: 15px;
+    width: auto;
 }
 .ProductList .p-price strike {
     color: #696868;
@@ -7229,7 +7229,7 @@ div.FacebookLikeButtonContainer iframe {
     width: 168px;
 }
 .CheckoutOrderComments textarea {
-   width: 98%;
+    width: 98%;
 }
 #VideoContainer embed {
     width: 100%;
