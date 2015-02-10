@@ -1,42 +1,8 @@
 /* Important! This file is to only be edited through WebDAV or through the control panel by the client, not theme partners/designers. */
-
-/*the space between the slide and the navbar*/
-.slide-show {
-	margin-top: 2px;
+/*the slide show*/
+#HomeSlideShow {
+	margin-top: -20px;
 }
-
-
-/*the how it works button*/
-.how {
-	height: 100%;
-	background-color: #FFFFFF;
-	margin-bottom: 4%;
-	border: 2px solid #B4823B;
-	-webkit-box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	-moz-box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	color: #232323;
-}
-
-.how p{
-	line-height: 0.6;
-	font-size: 170%;
-	font-family: cursive;
-	margin: 30% 0;
-}
-
-.how .btn:hover{
-	color: #FFFFFF !important;
-	border: 2px solid #B4823B !important;
-	background-color:#232323 !important; 
-	-webkit-box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	-moz-box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	box-shadow: 0px 2px 5px 1px rgba(135,135,135,1);
-	color: #232323;
-	 transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-}
-
 /*the side search filter spacing of items*/
 .sort {
 	margin-bottom: 5px;
