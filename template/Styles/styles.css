@@ -513,7 +513,7 @@ input[type="password"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #616161;
 }
 .checkout_address  input[type="text"], .checkout_address input[type="password"] {
     width: 180px;
