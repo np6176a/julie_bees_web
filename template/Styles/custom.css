@@ -96,3 +96,8 @@ a:hover , .footer a:hover{
 .giftbanner {
 	margin-bottom: 20px;
 }
+
+/*the footer payment and cert alignement*/
+.pay-cert-align {
+    text-align: center;
+}
