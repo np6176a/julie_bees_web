@@ -1,0 +1,131 @@
+.arrow {
+	position: fixed;
+	z-index: 1;
+	left: 31px;
+	top: 19%;
+	font-size: 30px!important;
+	text-align: center;
+	left: 40px;
+	color: inherit;
+}
+
+.arrowRev {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	color: #232323;
+	font-size: 1.3em!important;
+}
+
+.sidemenu {
+	width: 35px;
+	height: 35px;
+	background-color: #f3f3f3;
+	position: fixed;
+	z-index: 1;
+	left: 28px;
+	top: 18.5%;
+	color: #232323!important;
+}
+.sidemenu:hover {
+	box-shadow: 0 40px 0 #232323 inset;
+	background-color: #232323;
+	color: #FFFFFF !important;
+	transition: all 0.3s ease 0s;
+}
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #ffffff;
+	border: 1px solid #232323;
+	z-index: 100;
+}
+.slideout-menu h3 {
+	position: relative;
+	padding: 12px 10px;
+	color: #232323;
+	font-size: 1.2em;
+	font-weight: 400;
+	border-bottom: 4px solid #b4823b;
+	text-transform: uppercase;
+}
+/*.slideout-menu .slideout-menu-toggle .arrowRev {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Adobe Caslone, serif;
+	font-weight: bold;
+	line-height: 1;
+	background: #FFFFFf;
+	color: #232323;
+	text-decoration: none;
+	vertical-align: top;
+}*/
+.slideout-menu .slideout-menu-toggle:hover {
+	color: #232323;
+}
+.slideout-menu ul {
+	list-style: none;
+	font-weight: 300;
+}
+.slideout-menu ul > li {
+	border-top: 1px solid #b4823b;
+	/*border-bottom: 1px solid #b4823b;*/
+}
+.slideout-menu ul > li:first-child {
+	border-top: none;
+}
+.slideout-menu ul > li a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	color: #232323;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.slideout-menu ul li a:hover {
+	color: #fff;
+}
+.slideout-menu ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: .5;
+}
+
+.text {
+	font-size: 14px;
+	padding: 2%;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+#SideShopByBrandFull {
+	margin-bottom: 5px;
+}
+
+.categoryAccordion ul >li {
+	width: 100%;
+	border: none;
+}
+.categoryAccordion > ul > li > a{
+	text-transform: none;
+	font-size: 1em;
+	padding: 0px;
+	color:#5C5C5C;
+	margin-left: 10px;
+}
+.categoryAccordion > ul > li > a:hover {
+	color: #B4823B !important;
+}
+.categoryAccordion .sf-menu li:hover ul, .categoryAccordion .sf-menu li.sfHover ul{
+	left: 65%;
+	width: 200px;
+	font-size: 0.95em;
+}
