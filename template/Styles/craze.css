@@ -37,7 +37,7 @@
 #SideNewsletterBox1 h4{background:url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/newsletter-icon.png?t=1418417305) 0 center no-repeat}
 @media (max-width:767px){#SideNewsletterBox1 .email_tittle{text-align:center}
 #SideNewsletterBox1 h4{font-size:14px}}
-@media (max-width:991px){#SideNewsletterBox1 h4{background:none;font-size:14px;line-height:inherit;padding:inherit}}
+@media (max-width:991px){#SideNewsletterBox1 h4{background:0 0;font-size:14px;line-height:inherit;padding:inherit}}
 @media (max-width:320px){#SideNewsletterBox1 .col-md-12{padding:0}
 #SideNewsletterBox1 .Textbox.autobox.default,#SideNewsletterBox1 .Textbox.autobox.filled{margin:0}}
 @media (max-width:479px){#SideNewsletterBox1{margin:5px 0 20px;padding:15px 0 5px}
@@ -66,7 +66,7 @@
 #SideNewsletterBox1 .email_box ul{text-align:right}
 @media (max-width:767px){#SideNewsletterBox1 .email_tittle{text-align:center}
 #SideNewsletterBox1 h4{font-size:14px}}
-@media (max-width:991px){#SideNewsletterBox1 h4{background:none;font-size:14px;line-height:inherit;padding:inherit}}
+@media (max-width:991px){#SideNewsletterBox1 h4{background:0 0;font-size:14px;line-height:inherit;padding:inherit}}
 @media (max-width:320px){#SideNewsletterBox1 .col-md-12{padding:0}
 #SideNewsletterBox1 .Textbox.autobox.default,#SideNewsletterBox1 .Textbox.autobox.filled{margin:0}}
 @media (max-width:479px){#SideNewsletterBox1{margin:5px 0 20px;padding:15px 0 5px}
