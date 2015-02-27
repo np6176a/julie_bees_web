@@ -1,0 +1,20 @@
+<div class="display">
+    <span class="disp_grid"><i class="glyphicon glyphicon-th-large"></i></span>
+    <span class="disp_list"><i class="glyphicon glyphicon-th-list"></i></span>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#CategoryContent").displayMode({
+            defaultView     : 'Grid',   // 'List' or 'Grid'
+            listSelector    : '.disp_list',
+            gridSelector    : '.disp_grid',
+            activeClass     : 'activemode'
+        });
+         $("#SearchPage").displayMode({
+            defaultView     : 'Grid',   // 'List' or 'Grid'
+            listSelector    : '.disp_list',
+            gridSelector    : '.disp_grid',
+            activeClass     : 'activemode'
+        });
+    });
+</script>

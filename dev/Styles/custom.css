@@ -1,103 +1,15 @@
-/* Important! This file is to only be edited through WebDAV or through the control panel by the client, not theme partners/designers. */
-/*the side search filter spacing of items*/
-.sort {
-	margin-bottom: 5px;
-}
-
-/*the color of links on hover throughout the site*/
-a:hover , .footer a:hover{
-    color: #B4823B !important;
-}
-
-/*the color of the choose options and icon for each product hover*/
-.ProductActionAdd .btn {
-    background: none repeat scroll 0 0 #B4823B !important;
-    font-size: 14px;
-    height: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-.ProductActionAdd .btn:hover {
-	background: none repeat scroll 0 0 #232323 !important;
-	color: #FFFFFF !important;
-	 transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-}
-
-.listimage .fa, .listimage .glyphicon, .listimage .QuickViewBtn {
-    background: none repeat scroll 0 0 #EEEEEE !important;
-    border-radius: 99%;
-    color: #B4823B !important;
-    font-size: 14px;
-    height: 32px;
-    line-height: 32px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    width: 32px;
-}
-
-.itemlist .listimage .glyphicon:hover, .listimage .QuickViewBtn:hover {
-    background-color: #232323 !important;
-    color: #FFFFFF !important;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-}
-
-/*the homepage panels tab background colors*/
-.Main_inner .Tablist.active > a{
-	padding: 0 35px 35px 35px;
-	background-color: #FBFBFB;
-}
-
-/*the header social media section*/
-.header-main .SocialConnect li {
-    display: inline-block;
-    float: right;
-    margin-right: 8px;
-    width: auto;
-    text-align: center;
-}
-.header-main h4 {
-	text-align: center;
-	margin-top: 13px;
-	float: left;
-}
-
-.free h4 {
-	text-transform: uppercase;
-	font-weight: 500;
-	margin-top: 10px;
-}
-
-/*the error message popup*/
-.outofstock {
-	font-size: 1.2em;
-	margin-right: 7%;
-	margin-bottom: 14px;
-	text-transform: uppercase;
-	color: #D00019;
-	font-weight: 600;
-	max-width: 85%;
-}
-
-/*the Sale price color*/
-.SalePrice {
-	color: #D00019;
-}
-
-/*the tiny product image left orientation*/
-.TinyOuterDiv div a > img {
-	margin-left: 42%;
-}
-
-/*the gift banner bottom space*/
-.giftbanner {
-	margin-bottom: 20px;
-}
-
-/*the footer payment and cert alignement*/
-.pay-cert-align {
-    text-align: center;
-}
+.sort{margin-bottom:5px}
+.footer a:hover,a:hover{color:#B4823B!important}
+.ProductActionAdd .btn{background:#B4823B!important;font-size:14px;height:30px;line-height:30px;text-transform:uppercase}
+.ProductActionAdd .btn:hover{background:#232323!important;color:#FFF!important;transition:all .3s ease 0s;-webkit-transition:all .3s ease 0s}
+.listimage .QuickViewBtn,.listimage .fa,.listimage .glyphicon{background:#EEE!important;border-radius:99%;color:#B4823B!important;font-size:14px;height:32px;line-height:32px;margin:0;padding:0;text-align:center;transition:all .3s ease 0s;width:32px}
+.itemlist .listimage .glyphicon:hover,.listimage .QuickViewBtn:hover{background-color:#232323!important;color:#FFF!important;transition:all .3s ease 0s;-webkit-transition:all .3s ease 0s}
+.Main_inner .Tablist.active>a{padding:0 35px 35px;background-color:#FBFBFB}
+.header-main .SocialConnect li{display:inline-block;float:right;margin-right:8px;width:auto;text-align:center}
+.header-main h4{text-align:center;margin-top:13px;float:left}
+.free h4{text-transform:uppercase;font-weight:500;margin-top:10px}
+.outofstock{font-size:1.2em;margin-right:7%;margin-bottom:14px;text-transform:uppercase;color:#D00019;font-weight:600;max-width:85%}
+.SalePrice{color:#D00019}
+.TinyOuterDiv div a>img{margin-left:42%}
+.giftbanner{margin-bottom:20px}
+.pay-cert-align{text-align:center}

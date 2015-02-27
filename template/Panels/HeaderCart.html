@@ -1,0 +1,76 @@
+
+<div class="HeaderCart">
+    <a style="display:%%GLOBAL_HideCartOptions%%" href="%%GLOBAL_ShopPathNormal%%/cart.php">
+        <span class="Icon">&nbsp;</span>
+        <div  class="cartLink">My cart<br /><span class="item">%%GLOBAL_CartItems%%</span> - <span class="total"><strong></strong></span></div> 
+    </a>
+     <div id="CartHover" class="CartHover" style="display: none;">
+            %%Panel.SideCartContents%%
+     </div>
+</div>
+
+<script>
+/*
+function _showFastCart(modalOptions) {
+    modalOptions = $.extend({
+        width: 700,
+        closeTxt: true,
+        onShow: function() {
+            $("#fastCartSuggestive a[href*='cart.php?action=add']").unbind('click');
+
+            var itemTxt = $('#fastCartNumItemsTxt').html();
+            var itemTotal = $('.fastCartSummaryBox .ProductPrice').html();
+            
+                $('.cartLink .item').html(itemTxt);
+                $('.cartLink .total strong').html(itemTotal); 
+            
+            var additem = $(".fastCartProd").html();
+              var additemprice = $(".fastCartItemBox .ProductPrice").html();
+              var additemqty = $(".fastCartItemBox .Quantity").html();
+              var additemqty = additemqty.match(/\d+/);
+              
+              //$("#CartHover li").find(additem).addClass("xxxx");
+             
+              $("#CartHover .ProductList").append('<li>'+additemqty+' x '+additem+' <em class="ProductPrice">'+additemprice+'</em></li>');
+              $("#CartHover .empty:contains('empty')").remove();
+              if($(".cartLink .item").text() == "1 item")
+              {
+                $("#CartHover .BlockContent").append('<ul class="ProductList"><li>'+additemqty+' x '+additem+' <em class="ProductPrice">'+additemprice+'</em></li></ul><strong>Total:</strong><span class="total">Your sub total is <strong>'+additemprice+'</strong></span><p style="padding-top: 0px;" class="Clear"><a class="ViewCartLink" href="/cart.php">View Cart</a><a class="CheckoutLink" onclick="" href="/checkout.php">Checkout</a></p></span>');
+              };
+        },
+        onClose: function() {
+            if (window.location.href.match(config.ShopPath + '/cart.php')) {
+                $('#ModalContainer').remove();
+                window.location = window.location.href
+            } else {
+                $('#ModalContainer').remove();
+            }
+        } 
+    }, modalOptions);
+    $.iModal.close();
+    $.iModal(modalOptions);
+};
+*/
+$(".HeaderCart").hover(function()
+{ 
+    $("#CartHover").slideToggle();
+});
+
+$(document).ready(function() 
+{
+    if($(".cartLink .item").text() == "") 
+    {
+        $(".cartLink .item").html("0 items");
+        $(".cartLink .total strong").html("0.00");
+        $("#CartHover").html("<div class='BlockContent'><span class='empty'>Your Shopping Cart is empty</span></div>"); 
+    }else
+    {
+        var nitem = $("#CartHover .item strong").html();
+        var ntotal = $("#CartHover .total strong").html();
+        
+        $(".cartLink .total strong").html(ntotal);
+        var carthover = $("#SideCartContents").html(); 
+        $("#CartHover").html(carthover); 
+    }; 
+});
+</script>

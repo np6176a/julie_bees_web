@@ -1,0 +1,39 @@
+%%Panel.HTMLHead%%
+    <body>
+        %%Panel.DrawerMenu%%
+        <div class="page save_new_return">
+            %%Panel.Header%%
+            <div class="main container">
+                <div class="inner">
+                    %%Panel.WrapperBanner%%
+                    %%Panel.AccountNewReturnBreadcrumb%%
+                    <div class="row">
+                    <div class="Left col-md-3 col-sm-3 " id="LayoutColumn1">
+                        %%Panel.SideAccountMenu%%
+                    </div>
+                    <div class="Content col-md-9 col-sm-9" id="LayoutColumn2">
+                        <div class="Block">
+                            <h1 class="TitleHeading">Return Item(s) from Order #%%GLOBAL_OrderId%%</h1>
+                            <div class="BlockContent">
+                                <p class="SuccessMessage">
+                                    %%LNG_ReturnRequestSubmitted%%
+                                </p>
+                                <p>%%LNG_ReturnSubmittedInfo%%</p>
+                                <div style="display: %%GLOBAL_HideReturnInstructions%%">
+                                    <h3>%%LNG_ReturnInstructions%%</h3>
+                                    <p>%%GLOBAL_ReturnInstructions%%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="Right" id="LayoutColumn3">
+                    </div>
+                     </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            %%Panel.Footer%%
+        </div>
+    </body>
+</html>

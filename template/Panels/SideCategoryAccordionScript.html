@@ -1,0 +1,13 @@
+
+<script type="text/javascript">
+        $('#SideCategoryAcc .categoryAccordion ul li ul').hide();
+        $(document).ready(function() {
+        	$("#SideCategoryAcc .categoryAccordion > ul.category-list").accordionmenu({
+        		accordion:true,
+        		speed: 500,
+        		closedSign: '<i class="accord-arrow fa fa-angle-right"></i>',
+        		openedSign: '<i class="accord-arrow fa fa-angle-down"></i>'
+        	});
+            $("#SideCategoryAcc .categoryAccordion span").parent().addClass("has-sub");
+         });
+</script>

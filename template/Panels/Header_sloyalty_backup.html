@@ -1,0 +1,74 @@
+<div class="header container">
+    <div class="inner">
+        <div id="AjaxLoading">
+            <div class="ajax-loader">
+                <img src="%%GLOBAL_IMG_PATH%%/loader.png" alt="" />&nbsp;%%LNG_LoadingPleaseWait%%
+            </div>
+        </div>
+        %%GLOBAL_MaintenanceNotice%%
+        %%Panel.TopMenu%%
+        %%Panel.TopMenuMobile%%
+        %%Panel.SideLiveChatServices%%
+        <div id="Header">
+            <div class="inner row">
+                <div class="col-md-4 col-sm-4"></div>
+                <div class="header-logo col-md-4 col-sm-4">
+                    <div id="ToggleMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    %%GLOBAL_HeaderLogo%%
+                    <div id="miniSearch">
+                        <span class="miniSearch"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="toggle-search">
+                    %%Panel.MiniSearch%%
+                </div>
+                <div class="header-secondary col-md-4 col-sm-4">
+                    %%Panel.HeaderSearch%%
+                </div>
+                <div id="cart-amount">
+                    <a href="%%GLOBAL_ShopPathNormal%%/cart.php" class="Cart"><span class="bag-handle"></span><span class="total">&nbsp;</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="PageMenu">
+            <div class="inner">                
+               <div class="CategoryList" id="SideCategoryList">
+                    <h3>%%LNG_HC_categories%%</h3>
+                    <div class="BlockContent">
+                        <div class="%%GLOBAL_SideCategoryListTypeClass%%">
+                            <ul class="sf-menu sf-horizontal sf-js-enabled">    
+                            </ul>
+                            %%SNIPPET_SideCategoryList%%
+                            %%Panel.PagesMenu%%
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class = "header-main">
+        <div class="free col-md-6 col-sm-6">
+                        <h4>Handcrafted In The USA</h4>
+                    </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            %%Panel.SocialLinks%%
+        </div>
+    </div>
+
+    <script>
+        $('.miniSearch').click(function(){
+            if(!$(this).hasClass('open')){
+                $(this).addClass('open').find(".fa").addClass('fa-times').removeClass('fa-search');
+                $('.toggle-search').slideDown('300');
+            } else {
+                $(this).removeClass('open').find(".fa").removeClass('fa-times').addClass('fa-search');
+                $('.toggle-search').slideUp('200');
+            }
+        })
+        
+    </script>
+</div>

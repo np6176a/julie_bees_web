@@ -1,0 +1,47 @@
+<div class="Block Panel" id="ProductVideos">
+
+<script type="text/javascript">
+    lang.Close = '%%LNG_Close%%';
+    config.ProductImageMode = '%%GLOBAL_ProductImageMode%%';
+</script>
+    
+    <div class="prodAccordionContent">
+        <div id="VideoSideContainer">
+            <h2 id="videos">%%LNG_ProductVideos%%</h2>
+            <ul>%%SNIPPET_VideoSideList%%</ul>
+        </div>
+        <div id="VideoMiddleContainer">
+            <div class="BlockContent">
+                <div id="VideoContainer" class="">
+                    <div id="VideoList" class="col-md-3 col-sm-4 col-xs-3">
+                        <ul>
+                            %%SNIPPET_VideoList%%
+                        </ul>
+                    </div>
+                    <div class="videoOuter col-md-9 col-sm-8 col-xs-9">
+                    <div class="FeaturedVideoInner">
+                        <div id="FeaturedVideo">
+                            <object width="398" height="330">
+                                <param name="movie" value="http://www.youtube.com/v/%%GLOBAL_FeaturedVideo%%?fs=1" />
+                                <param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" />
+                                <embed src="http://www.youtube.com/v/%%GLOBAL_FeaturedVideo%%?fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />
+                            </object>
+                            <div id="VideoSingle" class="%%GLOBAL_HideSingleVideo%%">
+                                <div class="VideoSingleTitle">%%GLOBAL_VideoTitleLong%% <span class="SingleVideoLength">%%GLOBAL_VideoLength%%</span></div>
+                                <p class="VideoSingleDescription">%%GLOBAL_VideoDescriptionLong%%</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <script type="text/javascript">
+                selectCurrentVideo('%%GLOBAL_FeaturedVideo%%');
+            </script>
+            
+        </div>
+    
+        
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="CouponCode ">
+    <h3>%%LNG_CouponCode%%</h3>
+    <script type="text/javascript">
+        lang.EnterCouponCode = "%%LNG_EnterCouponCode%%";
+    </script>
+    <form onsubmit="return Cart.CheckCouponCode()" action="%%GLOBAL_ShopPath%%/cart.php" method="post">
+        <input type="hidden" name="action" value="applycoupon" />
+            <p>%%LNG_CouponCodeIntro%%</p>
+            <input type="text" name="couponcode" id="couponcode" class="Textbox Field150" />
+            <input type="submit" value="%%LNG_HCV_go%%" class="btn alt" />
+    </form>
+</div>

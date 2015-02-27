@@ -1,0 +1,21 @@
+        
+<div id="DrawerMenu">
+    <div class="inner">
+        %%Panel.SideCategoryList%%
+        %%Panel.PagesMenu%%
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#DrawerMenu ul li ul').hide();
+    $('#DrawerMenu ul').removeClass('sf-menu');
+    $(document).ready(function() {
+        $("#DrawerMenu .BlockContent > div > ul, #DrawerMenu .PagesList ul.pages-menu").accordionmenu({
+            accordion:true,
+            speed: 500,
+            closedSign: '<i class="accord-arrow fa fa-angle-left"></i>',
+            openedSign: '<i class="accord-arrow fa fa-angle-down"></i>'
+        });
+        $("#DrawerMenu  span").parent().addClass("has-sub");
+     });
+</script>
