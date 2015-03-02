@@ -1,7 +1,10 @@
-.arrow{position:fixed;z-index:1;top:19%;font-size:30px!important;text-align:center;left:40px;color:inherit}
+.arrow{position:fixed;z-index:1;top:19%;font-size:30px!important;text-align:center;left:8%;color:inherit}
+.arrow:hover{color:inherit}
 .arrowRev{display:inline-block;vertical-align:middle;float:right;color:#232323;font-size:1.3em!important}
-.sidemenu{width:35px;height:35px;background-color:#f3f3f3;position:fixed;z-index:1;left:28px;top:18.5%;color:#232323!important}
-.sidemenu:hover{box-shadow:0 40px 0 #232323 inset;background-color:#232323;color:#FFF!important;transition:all .3s ease 0s}
+.sidemenu{width:100px;height:35px;background-color:#FDFDFD;position:fixed;z-index:1;left:28px;top:18.5%;border:1px solid #616161}
+.sidemenu:hover{box-shadow:0 40px 0 #232323 inset;background-color:#232323;color:#FFF!important;transition:all .3s ease 0s;border:1px solid #616161}
+.sidemenu h4{margin-left:8%;line-height:1.9em}
+.sidemenu h4:hover{color:inherit}
 .slideout-menu{position:fixed;top:0;left:-250px;width:250px;height:100%;background:#fff;border:1px solid #232323;z-index:100}
 .slideout-menu h3{position:relative;padding:12px 10px;color:#232323;font-size:1.2em;font-weight:400;border-bottom:4px solid #b4823b;text-transform:uppercase}
 .slideout-menu .slideout-menu-toggle:hover{color:#232323}
