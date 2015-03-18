@@ -198,7 +198,6 @@ table.CartContents{border-top:4px solid #EEE!important}
 #ChooseShippingAddress dd,#ChooseShippingAddress dt,#CreateAccountForm dd,#CreateAccountForm dt{width:100%;padding-bottom:0}
 table tbody tr td,table thead tr th,table.CartContents tbody tr td,table.CartContents thead tr th,table.General tbody tr td,table.General thead tr th{padding:3px}
 .CartRemoveLink{display:none}
-.EstimateShipping .Textbox,.EstimateShipping .selector.fixedWidth,.EstimateShipping dl dt{width:100%}
-.CategoryDescription .SubCategoryList li,.SubBrandList li{width:100%}
+.CategoryDescription .SubCategoryList li,.EstimateShipping .Textbox,.EstimateShipping .selector.fixedWidth,.EstimateShipping dl dt,.SubBrandList li{width:100%}
 #multiAddressForm div.selector{width:120px}
 #ProductDetails .ProductThumbImage{height:500px}}

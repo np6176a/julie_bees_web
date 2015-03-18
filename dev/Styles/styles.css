@@ -24,7 +24,7 @@ input,select,textarea{font-family:'Source Sans Pro',Sans-Serif;font-size:12px}
 #SearchForm label,#SearchForm_mini label{display:none}
 #SearchForm input,#SearchForm_mini input{color:#AAA!important;float:none;font-size:11px;font-weight:700;height:30px;margin:0;padding:0 0 0 9px;text-transform:uppercase;width:280px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;line-height:30px}
 #SearchForm input#search_query,#SearchForm_mini input#search_query_mini{background:#FFF;border:1px solid #E7E8E7;box-shadow:0 0 6px #E1E1E1 inset;padding-right:30px}
-#SearchForm .Button,#SearchForm_mini .Button{background:none;border:0!important;cursor:pointer;height:30px;margin:0;padding:0;position:absolute;right:0;top:0;vertical-align:top;width:30px;z-index:1;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;-moz-transition:background-color 150ms ease;-webkit-transition:background-color 150ms ease;-o-transition:background-color 150ms ease;transition:background-color 150ms ease}
+#SearchForm .Button,#SearchForm_mini .Button{background:0 0;border:0!important;cursor:pointer;height:30px;margin:0;padding:0;position:absolute;right:0;top:0;vertical-align:top;width:30px;z-index:1;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;-moz-transition:background-color 150ms ease;-webkit-transition:background-color 150ms ease;-o-transition:background-color 150ms ease;transition:background-color 150ms ease}
 #SearchForm p{display:none;font-size:.85em;margin:5px 0 0}
 select{border-radius:none;margin:0;padding:9px}
 select.Field45{width:auto}
@@ -71,8 +71,8 @@ fieldset{margin:0 0 20px;border:0}
 #ContainerLower{clear:both;float:left;width:100%;padding:0 0 20px}
 #Outer{clear:both}
 .centerer{margin:0 auto;text-align:center}
-input.Textbox,input[type=text],input[type=password],textarea{margin:0;height:38px;line-height:36px;padding:0 1em;background:#fff;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:1px solid #616161}
-.checkout_address #uniform-FormField_11,.checkout_address input[type=text],.checkout_address input[type=password]{width:180px}
+input.Textbox,input[type=password],input[type=text],textarea{margin:0;height:38px;line-height:36px;padding:0 1em;background:#fff;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:1px solid #616161}
+.checkout_address #uniform-FormField_11,.checkout_address input[type=password],.checkout_address input[type=text]{width:180px}
 textarea{min-height:100px;padding:1em;line-height:normal}
 .Left h3{padding-top:0}
 .Left .BlockContent{margin:0}
@@ -675,7 +675,7 @@ a.ChangeLink{top:12px;right:10px}
 .Message{padding:20px}
 .ccode label{float:left;width:200px;padding:0 20px;text-align:center}
 .ProductThumbImage .zoomWindow{margin-left:-1px}
-input[type=radio],input[type=checkbox]{margin-right:5px}
+input[type=checkbox],input[type=radio]{margin-right:5px}
 #provider_list{line-height:200%}
 #ChooseBillingAddress,#ChooseShippingAddress{position:relative}
 #ChooseBillingAddress label,#ChooseShippingAddress label{display:block}
@@ -1295,7 +1295,7 @@ div.FacebookLikeButtonContainer iframe{height:22px}
 .SpecificInfoMessage:before{content:"\f00c";font:14px fontawesome;padding:0 12px}
 .SpecificInfoMessage{margin-bottom:20px;margin-top:0}
 #CreateAccountForm .Textbox{width:180px}
-#AddressEditForm input[type=text],#AddressEditForm input[type=password]{width:168px}
+#AddressEditForm input[type=password],#AddressEditForm input[type=text]{width:168px}
 .CheckoutOrderComments textarea{width:98%}
 #VideoContainer embed{width:100%}
 .compare{display:none!important}
