@@ -105,8 +105,8 @@ a:hover{color:#232323!important}
 .ShowResults .searchOptionTab{padding:15px 0 0}
 .TopMenu .fa{font-size:13px}
 .TopMenu li{padding:0 5px}}
-@media (max-width:991px) and (min-width:768px){.Left .ProductList .ProductImage,.Right .ProductList .ProductImage{float:none;width:100%}}
-@media (max-width:767px){.page{padding:0}
+@media (max-width:991px) and (min-width:770px){.Left .ProductList .ProductImage,.Right .ProductList .ProductImage{float:none;width:100%}}
+@media (max-width:769px){.page{padding:0}
 .header-logo{text-align:center}
 #ToggleMenu,#miniSearch{display:block}
 .menu-text{display:none!important}

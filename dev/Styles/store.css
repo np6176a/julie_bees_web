@@ -574,14 +574,14 @@ a:hover {
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 770px) {
     .Left .ProductList .ProductImage, .Right .ProductList .ProductImage {
         float: none;
         width: 100%
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
     .page {
         padding: 0
     }
