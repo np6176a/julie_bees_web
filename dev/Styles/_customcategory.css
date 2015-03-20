@@ -135,3 +135,38 @@
     width: 200px;
     font-size: .95em
 }
+
+/*media queries*/
+@media (max-width: 769px) {
+    .sidemenu {
+        width: 35px;
+        height: 125px;
+        background-color: #232323;
+        position: fixed;
+        z-index: 1;
+        left: 96%;
+        top: 15%;
+        padding-top: 1%;
+        -webkit-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
+        box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
+    }
+
+    .sidemenu >h4 {
+        margin-left: 8%;
+        line-height: 6.8em;;
+        letter-spacing: 2px;
+        color: #f7f7f7 !important;
+        transform: rotate(270deg);
+    }
+    .arrow {
+        position: fixed;
+        z-index: 1;
+        top: 24%;;
+        font-size: 30px !important;
+        text-align: center;
+        left: 97.5%;
+        color: #F7f7f7 !important;
+        transform: rotate(180deg);
+    }
+}
