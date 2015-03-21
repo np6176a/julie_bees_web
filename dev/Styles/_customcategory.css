@@ -169,4 +169,15 @@
         color: #F7f7f7 !important;
         transform: rotate(180deg);
     }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        border: 1px solid #232323;
+        z-index: 100
+    }
 }
