@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      .changed {
+        background-color: grey;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $( function() {
+        function mediaqueryresponse(mql){
+          if (mql.matches){ // if media query matches
+//          #remove the other event namespace
+            $(".test-button").unbind('click.right');
+//          #add current namespace
+            $('.test-button').bind('click.left', function(event) {
+              var test_button = $(".test-button");
+              test_button.toggleClass("changed");
+              if (test_button.hasClass("changed")) {
+
+                test_button.fadeTo("slow" , 0.25);
+              } else {
+                test_button.fadeTo("slow", 1);
+              }
+            });
+            console.log("The condition " + mql.media + " has been met")
+          }
+          else{
+//          Remove the other event namespace
+            $(".test-button").unbind('click.left');
+//          Add current namespace
+            $('.test-button').bind('click.right', function(event) {
+              var test_button = $(".test-button");
+              test_button.toggleClass("changed");
+              if (test_button.hasClass("changed")) {
+                test_button.fadeTo("slow" , 0.7);
+              } else {
+                test_button.fadeTo("slow" , 1);
+              }
+            });
+            console.log("Condition not met yet")
+          }
+        }
+
+        var mql = window.matchMedia("all and (min-width: 700px)");
+        mediaqueryresponse(mql); // call listener function explicitly at run time
+        mql.addListener(mediaqueryresponse); // attach listener function to listen in on state changes
+      });
+    </script>
+  </head>
+  <body>
+    <p class="test-button">Test Button</p>
+  </body>
+</html>
