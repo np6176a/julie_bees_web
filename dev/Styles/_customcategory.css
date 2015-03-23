@@ -148,7 +148,7 @@
         background-color: #232323;
         position: fixed;
         z-index: 1;
-        left: 95.6%;
+        left: 93.6%;
         top: 15%;
         padding-top: 1%;
         -webkit-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
@@ -166,10 +166,10 @@
     .arrow {
         position: fixed;
         z-index: 1;
-        top: 27%;;
+        top: 27%;
         font-size: 30px !important;
         text-align: center;
-        left: 97.5%;
+        left: 95.3%;
         color: #F7f7f7 !important;
         transform: rotate(180deg);
     }
