@@ -6,7 +6,7 @@
         position: fixed;
         z-index: 2;
         left: 6.5%;
-        top: 18.5%;
+        top: 34.5%;
         padding-top: 1%;
         -webkit-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
         -moz-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.75);
@@ -25,7 +25,7 @@
     .arrow {
         position: fixed;
         z-index: 1;
-        top: 30.5%;;
+        top: 46%;;
         font-size: 30px !important;
         text-align: center;
         left: 7.5%;
@@ -46,33 +46,42 @@
 
     .slideout-menu {
         position: fixed;
-        top: 0;
+        top: 100px;
         right: unset;
         left: -250px;
         width: 250px;
-        height: 100%;
+        height: 63%;
         background: #fff;
         border: 1px solid #232323;
         z-index: 100
     }
 
-    .slideout-menu h3 {
+    .slideout-menu .label-slideout-menu {
+        font-size: 15px;
+        color: #717070;
+        text-transform: capitalize;
+    }
+
+    .slideout-menu > h3 {
         position: relative;
         padding: 12px 10px;
         color: #232323;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: 400;
-        border-bottom: 4px solid #b4823b;
-        text-transform: uppercase
+        border-bottom: 3px solid #232323;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
     }
 
     .slideout-menu .slideout-menu-toggle:hover {
         color: #232323
     }
 
-    .slideout-menu ul {
+    .slideout-menu > ul {
         list-style: none;
-        font-weight: 300
+        font-weight: 300;
+        margin: 0!important;
     }
 
     .slideout-menu ul > li {
@@ -83,6 +92,12 @@
         border-top: none
     }
 
+    .slideout-menu ul > li div.selector {
+        border: none;
+        text-transform: capitalize;
+        color: #323232;
+        font-size: 15px;
+    }
     .slideout-menu ul > li a {
         position: relative;
         display: block;
@@ -105,8 +120,8 @@
     }
 
     .text {
-        font-size: 14px;
-        padding: 2%;
+        font-size: 17px;
+        padding: 2% 0 2% 6%;
         line-height: 2em;
         text-transform: uppercase
     }
@@ -122,10 +137,10 @@
 
     .categoryAccordion > ul > li > a {
         text-transform: none;
-        font-size: 1em;
+        font-size: 15px;
         padding: 0;
-        color: #5C5C5C;
-        margin-left: 10px
+        color: #717070;
+        margin-left: 33px
     }
 
     .categoryAccordion > ul > li > a:hover {
@@ -174,15 +189,125 @@
         transform: rotate(180deg);
     }
 
+    .arrowRev {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        color: #232323;
+        font-size: 1.3em !important;
+        transform: rotate (180deg)
+    }
+
     .slideout-menu {
         position: fixed;
-        top: 0;
+        top: 100px;
         left: unset;
         right: -250px;
         width: 250px;
-        height: 100%;
+        height: 63%;
         background: #fff;
         border: 1px solid #232323;
-        z-index: 100
+        z-index: 100;
+    }
+
+    .slideout-menu .label-slideout-menu {
+        font-size: 15px;
+        color: #717070;
+        text-transform: capitalize;
+    }
+
+    .slideout-menu > h3 {
+        position: relative;
+        padding: 12px 10px;
+        color: #232323;
+        font-size: 1.5em;
+        font-weight: 400;
+        border-bottom: 3px solid #232323;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .slideout-menu .slideout-menu-toggle:hover {
+        color: #232323
+    }
+
+    .slideout-menu > ul {
+        list-style: none;
+        font-weight: 300;
+        margin: 0!important;
+    }
+
+    .slideout-menu ul > li {
+        border-top: 1px solid #b4823b
+    }
+
+    .slideout-menu ul > li:first-child {
+        border-top: none
+    }
+
+    .slideout-menu ul > li div.selector {
+        border: none;
+        text-transform: capitalize;
+        color: #323232;
+        font-size: 15px;
+    }
+    .slideout-menu ul > li a {
+        position: relative;
+        display: block;
+        padding: 10px;
+        color: #232323;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase
+    }
+
+    .slideout-menu ul li a:hover {
+        color: #fff
+    }
+
+    .slideout-menu ul li a i {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        opacity: .5
+    }
+
+    .text {
+        font-size: 17px;
+        padding: 2% 0 2% 6%;
+        line-height: 2em;
+        text-transform: uppercase
+    }
+
+    #SideShopByBrandFull {
+        margin-bottom: 5px
+    }
+
+    .categoryAccordion ul > li {
+        width: 100%;
+        border: none
+    }
+
+    .categoryAccordion > ul > li > a {
+        text-transform: none;
+        font-size: 15px;
+        padding: 0;
+        color: #717070;
+        margin-left: 33px
+    }
+
+    .categoryAccordion > ul > li > a:hover {
+        color: #B4823B !important
+    }
+
+    .categoryAccordion .sf-menu li.sfHover ul, .categoryAccordion .sf-menu li:hover ul {
+        left: 65%;
+        width: 200px;
+        font-size: .95em
+    }
+
+    .SortBox label {
+        display: none;
     }
 }

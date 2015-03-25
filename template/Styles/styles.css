@@ -1303,3 +1303,4 @@ div.FacebookLikeButtonContainer iframe{height:22px}
 .li-instagram .icon-instagram:hover{background:url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/instagram1.png?t=1421948319) no-repeat!important}
 .li-polyvore .icon-polyvore{background:url(https://cdn3.bigcommerce.com/s-r7keld18/product_images/uploaded_images/polyvore.png?t=1424818535) no-repeat!important;margin-top:1px;width:26px!important;height:26px!important}
 .li-polyvore .icon-polyvore:hover{:[object Object]}
+@media (max-width:769px){#SideNewProducts{display:none}}

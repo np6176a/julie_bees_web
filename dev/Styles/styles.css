@@ -7086,3 +7086,9 @@ div.FacebookLikeButtonContainer iframe {
 .li-polyvore .icon-polyvore:hover {
 : [ object Object ]
 }
+
+@media (max-width: 769px) {
+    #SideNewProducts {
+        display: none;
+    }
+}
