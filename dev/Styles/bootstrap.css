@@ -1647,7 +1647,7 @@ table td[class*=col-], table th[class*=col-] {
         width: auto !important;
         margin-left: -47.5% !important;
         overflow: auto;
-        height: 470px !important;
+        height: 740px !important;
         max-height: 90%;
         max-width: 95%
     }

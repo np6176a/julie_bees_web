@@ -378,7 +378,7 @@ table td[class*=col-],table th[class*=col-]{display:table-cell;float:none}
 .table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>thead>tr>th:first-child{border-left:0}
 .table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>thead>tr>th:last-child{border-right:0}
 .table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>th{border-bottom:0}
-.productPage #ModalContainer{position:fixed;top:20px!important;bottom:20px!important;width:auto!important;margin-left:-47.5%!important;overflow:auto;height:470px!important;max-height:90%;max-width:95%}
+.productPage #ModalContainer{position:fixed;top:20px!important;bottom:20px!important;width:auto!important;margin-left:-47.5%!important;overflow:auto;height:740px!important;max-height:90%;max-width:95%}
 .fastCartItemBox,.fastCartSummaryBox,.fastCartThumb{width:100%!important}
 .fastCartItemBox{padding:10px 20px 15px!important}}
 fieldset{padding:0;margin:0;border:0}
